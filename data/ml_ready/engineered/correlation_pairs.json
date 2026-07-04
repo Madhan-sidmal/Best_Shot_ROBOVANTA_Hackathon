@@ -1,0 +1,582 @@
+[
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "evi_mean",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "ndvi_median",
+    "feature_2": "evi_mean",
+    "correlation": 0.9516
+  },
+  {
+    "feature_1": "ndvi_max",
+    "feature_2": "evi_max",
+    "correlation": 0.9995
+  },
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "savi_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "evi_mean",
+    "feature_2": "savi_mean",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "ndvi_max",
+    "feature_2": "savi_max",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "evi_max",
+    "feature_2": "savi_max",
+    "correlation": 0.9995
+  },
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "ndwi_mean",
+    "correlation": 0.9979
+  },
+  {
+    "feature_1": "evi_mean",
+    "feature_2": "ndwi_mean",
+    "correlation": 0.9978
+  },
+  {
+    "feature_1": "savi_mean",
+    "feature_2": "ndwi_mean",
+    "correlation": 0.9979
+  },
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "ndmi_mean",
+    "correlation": 0.9976
+  },
+  {
+    "feature_1": "evi_mean",
+    "feature_2": "ndmi_mean",
+    "correlation": 0.9974
+  },
+  {
+    "feature_1": "savi_mean",
+    "feature_2": "ndmi_mean",
+    "correlation": 0.9976
+  },
+  {
+    "feature_1": "ndwi_mean",
+    "feature_2": "ndmi_mean",
+    "correlation": 0.9955
+  },
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "lswi_mean",
+    "correlation": 0.9972
+  },
+  {
+    "feature_1": "evi_mean",
+    "feature_2": "lswi_mean",
+    "correlation": 0.997
+  },
+  {
+    "feature_1": "savi_mean",
+    "feature_2": "lswi_mean",
+    "correlation": 0.9972
+  },
+  {
+    "feature_1": "ndwi_mean",
+    "feature_2": "lswi_mean",
+    "correlation": 0.9948
+  },
+  {
+    "feature_1": "ndmi_mean",
+    "feature_2": "lswi_mean",
+    "correlation": 0.9947
+  },
+  {
+    "feature_1": "vv_db_mean",
+    "feature_2": "vh_db_mean",
+    "correlation": 0.9765
+  },
+  {
+    "feature_1": "vh_vv_ratio_mean",
+    "feature_2": "rvi_mean",
+    "correlation": 0.9975
+  },
+  {
+    "feature_1": "vci_mean",
+    "feature_2": "csi_mean",
+    "correlation": 0.9999
+  },
+  {
+    "feature_1": "temp_range_mean",
+    "feature_2": "rh_mean_mean",
+    "correlation": 0.9886
+  },
+  {
+    "feature_1": "wind_mean_mean",
+    "feature_2": "precip_8day_sum",
+    "correlation": 0.9561
+  },
+  {
+    "feature_1": "wind_mean_mean",
+    "feature_2": "precip_8day_mean",
+    "correlation": 0.9561
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_8day_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_range_mean",
+    "feature_2": "eto_8day_sum",
+    "correlation": 0.9666
+  },
+  {
+    "feature_1": "rh_mean_mean",
+    "feature_2": "eto_8day_sum",
+    "correlation": 0.9793
+  },
+  {
+    "feature_1": "temp_range_mean",
+    "feature_2": "eto_8day_mean",
+    "correlation": 0.9666
+  },
+  {
+    "feature_1": "rh_mean_mean",
+    "feature_2": "eto_8day_mean",
+    "correlation": 0.9793
+  },
+  {
+    "feature_1": "eto_8day_sum",
+    "feature_2": "eto_8day_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "etc_8day_sum",
+    "feature_2": "water_deficit_sum",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "etc_8day_sum",
+    "feature_2": "water_deficit_mean",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "water_deficit_sum",
+    "feature_2": "water_deficit_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "ndvi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9647
+  },
+  {
+    "feature_1": "evi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9654
+  },
+  {
+    "feature_1": "savi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9647
+  },
+  {
+    "feature_1": "ndwi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9606
+  },
+  {
+    "feature_1": "ndmi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9609
+  },
+  {
+    "feature_1": "lswi_mean",
+    "feature_2": "season_length",
+    "correlation": 0.9608
+  },
+  {
+    "feature_1": "glcm_energy",
+    "feature_2": "glcm_asm",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "wind_mean_mean",
+    "feature_2": "precip_roll_16d_mean",
+    "correlation": 0.9561
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_16d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_16d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_8day_max",
+    "feature_2": "precip_roll_16d_max",
+    "correlation": 0.9936
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_16d_std",
+    "correlation": 0.9591
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_16d_std",
+    "correlation": 0.9591
+  },
+  {
+    "feature_1": "precip_8day_max",
+    "feature_2": "precip_roll_16d_std",
+    "correlation": 0.9701
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_16d_std",
+    "correlation": 0.9591
+  },
+  {
+    "feature_1": "precip_roll_16d_max",
+    "feature_2": "precip_roll_16d_std",
+    "correlation": 0.9861
+  },
+  {
+    "feature_1": "wind_mean_mean",
+    "feature_2": "precip_roll_32d_mean",
+    "correlation": 0.9561
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_32d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_32d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_32d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_32d_mean",
+    "correlation": 0.9591
+  },
+  {
+    "feature_1": "precip_8day_max",
+    "feature_2": "precip_roll_32d_max",
+    "correlation": 0.9819
+  },
+  {
+    "feature_1": "precip_roll_16d_max",
+    "feature_2": "precip_roll_32d_max",
+    "correlation": 0.9943
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_32d_max",
+    "correlation": 0.9961
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "precip_8day_max",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9621
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "precip_roll_16d_max",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9819
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9992
+  },
+  {
+    "feature_1": "precip_roll_32d_mean",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.9685
+  },
+  {
+    "feature_1": "precip_roll_32d_max",
+    "feature_2": "precip_roll_32d_std",
+    "correlation": 0.994
+  },
+  {
+    "feature_1": "wind_mean_mean",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 0.956
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 0.9601
+  },
+  {
+    "feature_1": "precip_roll_32d_mean",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "precip_roll_32d_std",
+    "feature_2": "precip_roll_64d_mean",
+    "correlation": 0.9694
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9835
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9835
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9835
+  },
+  {
+    "feature_1": "precip_roll_16d_max",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9586
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9912
+  },
+  {
+    "feature_1": "precip_roll_32d_mean",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9835
+  },
+  {
+    "feature_1": "precip_roll_32d_max",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9778
+  },
+  {
+    "feature_1": "precip_roll_32d_std",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9943
+  },
+  {
+    "feature_1": "precip_roll_64d_mean",
+    "feature_2": "precip_roll_64d_max",
+    "correlation": 0.9841
+  },
+  {
+    "feature_1": "precip_8day_sum",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9823
+  },
+  {
+    "feature_1": "precip_8day_mean",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9823
+  },
+  {
+    "feature_1": "precip_roll_16d_mean",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9823
+  },
+  {
+    "feature_1": "precip_roll_16d_max",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9701
+  },
+  {
+    "feature_1": "precip_roll_16d_std",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9945
+  },
+  {
+    "feature_1": "precip_roll_32d_mean",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9823
+  },
+  {
+    "feature_1": "precip_roll_32d_max",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9857
+  },
+  {
+    "feature_1": "precip_roll_32d_std",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9977
+  },
+  {
+    "feature_1": "precip_roll_64d_mean",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.983
+  },
+  {
+    "feature_1": "precip_roll_64d_max",
+    "feature_2": "precip_roll_64d_std",
+    "correlation": 0.9974
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "temp_roll_16d_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "temp_roll_32d_mean",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "temp_roll_16d_mean",
+    "feature_2": "temp_roll_32d_mean",
+    "correlation": 0.9999
+  },
+  {
+    "feature_1": "temp_roll_16d_std",
+    "feature_2": "temp_roll_32d_std",
+    "correlation": 0.9945
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "temp_roll_64d_mean",
+    "correlation": 0.9984
+  },
+  {
+    "feature_1": "temp_roll_16d_mean",
+    "feature_2": "temp_roll_64d_mean",
+    "correlation": 0.9987
+  },
+  {
+    "feature_1": "temp_roll_32d_mean",
+    "feature_2": "temp_roll_64d_mean",
+    "correlation": 0.9993
+  },
+  {
+    "feature_1": "temp_roll_16d_std",
+    "feature_2": "temp_roll_64d_std",
+    "correlation": 0.9712
+  },
+  {
+    "feature_1": "temp_roll_32d_std",
+    "feature_2": "temp_roll_64d_std",
+    "correlation": 0.9813
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "gdd_total",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_roll_16d_mean",
+    "feature_2": "gdd_total",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_roll_32d_mean",
+    "feature_2": "gdd_total",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "temp_roll_64d_mean",
+    "feature_2": "gdd_total",
+    "correlation": 0.9984
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "gdd_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_roll_16d_mean",
+    "feature_2": "gdd_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_roll_32d_mean",
+    "feature_2": "gdd_mean",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "temp_roll_64d_mean",
+    "feature_2": "gdd_mean",
+    "correlation": 0.9984
+  },
+  {
+    "feature_1": "gdd_total",
+    "feature_2": "gdd_mean",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "temp_mean_mean",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.974
+  },
+  {
+    "feature_1": "temp_roll_16d_mean",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.9749
+  },
+  {
+    "feature_1": "temp_roll_32d_mean",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.9775
+  },
+  {
+    "feature_1": "temp_roll_64d_mean",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.9835
+  },
+  {
+    "feature_1": "gdd_total",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.974
+  },
+  {
+    "feature_1": "gdd_mean",
+    "feature_2": "gdd_at_peak",
+    "correlation": 0.974
+  }
+]
