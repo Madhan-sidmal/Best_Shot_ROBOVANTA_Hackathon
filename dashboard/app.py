@@ -246,7 +246,7 @@ def render_sidebar():
             st.button("🗺️ GeoTIFF", use_container_width=True)
         
         st.markdown("---")
-        st.caption("Team ROBOVANTA | Bharatiya Antariksh Hackathon 2026")
+        st.caption("Team BEST SHOT")
     
     return {
         'study_area': study_area,
@@ -267,7 +267,7 @@ def render_header():
     st.markdown("""
     <div class="main-header">
         <h1>🛰️ KrishiDrishti — AI Crop Intelligence Dashboard</h1>
-        <p>Bharatiya Antariksh Hackathon 2026 | PS 06 — AI-Driven Crop Type, Moisture Stress & Irrigation Advisory</p>
+        <p>PS 06 — AI-Driven Crop Type, Moisture Stress & Irrigation Advisory</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -741,7 +741,7 @@ def main():
     st.markdown("""
     <div style="text-align: center; color: #6c757d; font-size: 0.85rem;">
         🛰️ <strong>KrishiDrishti</strong> — AI Crop Intelligence Platform | 
-        Team ROBOVANTA | Bharatiya Antariksh Hackathon 2026 | PS 06<br>
+        Team BEST SHOT | PS 06<br>
         Powered by Sentinel-1/2, MODIS, NISAR | Google Earth Engine + Python + Streamlit
     </div>
     """, unsafe_allow_html=True)

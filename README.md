@@ -1,6 +1,6 @@
 # 🛰️ KrishiDrishti — AI-Driven Crop Intelligence Platform
 
-> **Bharatiya Antariksh Hackathon 2026 | Problem Statement 06**
+> **Problem Statement 06**
 > AI-Driven Automated Crop Type, Moisture Stress Detection & Irrigation Advisory
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
@@ -75,5 +75,5 @@ streamlit run dashboard/app.py
 - 🛰️ NISAR-ready architecture
 - 📈 Interactive dashboard with time-series visualization
 
-## 👥 Team ROBOVANTA
-Bharatiya Antariksh Hackathon 2026
+## 👥 Team BEST SHOT
+
