@@ -1,0 +1,16 @@
+crop_class,label,count
+Bajra,0,10
+Chickpea,1,28
+Cotton,2,36
+Fallow,3,12
+Groundnut,4,15
+Jowar,5,39
+Maize,6,21
+Oilseeds,7,15
+Paddy,8,7
+Pulses,9,18
+Soybean,10,24
+Sugarcane,11,50
+Sunflower,12,16
+Vegetables,13,21
+Wheat,14,25

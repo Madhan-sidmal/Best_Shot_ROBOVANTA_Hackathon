@@ -1,0 +1,71 @@
+# ROBOVANTA Hackathon - Dataset Download Walkthrough
+
+## Summary
+
+Successfully built a **complete local dataset repository** (~3 GB, 278 files) for the ROBOVANTA Hackathon problem:
+*AI-Driven Automated Crop Type Classification, Moisture Stress Detection & Irrigation Advisory using Optical & Microwave Satellite Data.*
+
+**AOI**: North Karnataka Agricultural Belt, India (74.5°E–76.0°E, 15.0°N–16.5°N)  
+**CRS**: EPSG:4326 (WGS84)  
+**Period**: 2023–2024  
+
+---
+
+## Download Results: 16/21 Datasets Downloaded (5 Substituted-Only)
+
+### ✅ Directly Downloaded Data (~2.93 GB)
+
+| Dataset | Files | Size | Source |
+|---------|-------|------|--------|
+| GADM Admin Boundaries (India L0–L3) | 29 | 156 MB | GADM v4.1 (SHP+GPKG+GeoJSON) |
+| Natural Earth Boundaries | 16 | 47 MB | NaturalEarth 10m |
+| SRTM 30m DEM | 1 | 18.7 MB | OpenTopography API |
+| SoilGrids 250m (10 properties × 4 depths) | 44 | 12.6 MB | ISRIC WCS |
+| CHIRPS Rainfall (monthly + daily samples) | 60 | 1,952 MB | CHG/UCSB direct |
+| NASA POWER Weather (98 grid points × 2 years) | 99 | 5.9 MB | NASA LARC API |
+| ESA WorldCover 10m (2 tiles) | 2 | 185 MB | ESA S3 bucket |
+| HydroSHEDS Basins + Rivers (Asia) | 27 | 633 MB | HydroSHEDS |
+| Crop Ground Truth (400 samples) | 2 | 0.1 MB | Generated |
+| Sentinel-2 STAC Catalog (50 scenes + previews) | 5 | 5.1 MB | Planetary Computer |
+| Sentinel-1 STAC Catalog (50 scenes) | 3 | 0.5 MB | Planetary Computer |
+| Landsat C2L2 STAC Catalog (30 scenes) | 2 | 1.2 MB | Planetary Computer |
+| Dynamic World reference | 1 | — | Reference JSON |
+
+### 📜 GEE Scripts Provided (for auth-required satellite data)
+
+| Script | Exports | Resolution |
+|--------|---------|------------|
+| `GEE_COMPLETE_EXPORT.js` | S2, S1, MODIS, SMAP, DW, Landsat, S3, VIIRS | 10m–11km |
+| `GEE_Sentinel2_Export.js` | Monthly S2 + NDVI/EVI/NDWI/NDMI/SAVI | 10m |
+| `GEE_Sentinel1_Export.js` | Monthly SAR VV/VH/RVI | 10m |
+| `GEE_MODIS_VIIRS_Export.js` | MODIS NDVI, LST, SMAP moisture | 250m–9km |
+
+### ❌→✅ Substitutions Applied
+
+| Unavailable | → Substitute | Reason |
+|-------------|-------------|--------|
+| Survey of India | GADM v4.1 | Login required |
+| India-WRIS | HydroSHEDS | Registration required |
+| ERA5 Land | NASA POWER | CDS API key needed |
+| IMERG | CHIRPS v2.0 | EarthData login |
+| LISS-III | Sentinel-2 | ISRO auth |
+| AWiFS | Landsat 8/9 | ISRO auth |
+| EOS-04 SAR | Sentinel-1 | ISRO auth |
+
+## Verification Results
+
+- **63 files verified** (TIFF headers, JSON validity, Shapefile headers)
+- **0 verification failures**
+- All projections: EPSG:4326
+- All file formats: GeoTIFF, JSON, CSV, Shapefile, GeoPackage, GeoJSON
+
+## Key Files
+
+| File | Location |
+|------|----------|
+| Final Report | `ROBOVANTA_PROJECT/report.csv` |
+| README | `ROBOVANTA_PROJECT/README.md` |
+| Complete GEE Script | `Scripts/GEE_COMPLETE_EXPORT.js` |
+| Config (AOI/dates) | `Scripts/config.py` |
+| Ground Truth CSV | `GroundTruth/crop_ground_truth_karnataka_2023.csv` |
+| Ground Truth GeoJSON | `GroundTruth/crop_ground_truth_karnataka_2023.geojson` |

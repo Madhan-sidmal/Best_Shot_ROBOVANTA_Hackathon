@@ -20,12 +20,19 @@ env/
 *.swo
 *~
 
-# Data files (large)
-data/rasters/
-data/ground_truth/*.tif
-data/ancillary/*.tif
+# Data files (large raw datasets — NOT pushed)
+DATASETS/
+DATASETS.zip
 *.tif
 *.tiff
+*.tif.gz
+*.SAFE.zip
+*.gpkg
+*.zip
+
+# Keep cleaned ML outputs (small, needed by teammates)
+!data/ml_ready/
+!data/cleaned/
 
 # Model checkpoints
 models/saved/

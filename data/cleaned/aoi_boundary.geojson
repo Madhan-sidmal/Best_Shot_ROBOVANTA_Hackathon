@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Karnataka Agricultural Belt",
+        "description": "Dharwad-Belgaum-Bagalkot-Gadag region",
+        "bbox": [
+          74.5,
+          15.0,
+          76.0,
+          16.5
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.5,
+              15.0
+            ],
+            [
+              76.0,
+              15.0
+            ],
+            [
+              76.0,
+              16.5
+            ],
+            [
+              74.5,
+              16.5
+            ],
+            [
+              74.5,
+              15.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

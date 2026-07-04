@@ -1,0 +1,6408 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.537516,
+          15.95914
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.604707,
+          15.334816
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.630408,
+          16.338269
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.827957,
+          15.044696
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.798256,
+          15.039804
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.830661,
+          15.817412
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.509748,
+          16.214146
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.010376,
+          16.047209
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.771242,
+          15.145075
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.594598,
+          16.210692
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.067802,
+          16.459674
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.42778,
+          16.244107
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.651502,
+          15.349186
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.047248,
+          15.953527
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.900467,
+          15.314261
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.98,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.413697,
+          15.972053
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.745104,
+          16.09369
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.46,
+          16.484285
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.764278,
+          16.026921
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.54815,
+          15.343572
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.816474,
+          15.401611
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.972017,
+          16.314551
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.871821,
+          15.593448
+        ]
+      },
+      "properties": {
+        "id": 26,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.869941,
+          15.39732
+        ]
+      },
+      "properties": {
+        "id": 27,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.376879,
+          15.394112
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.828981,
+          15.599101
+        ]
+      },
+      "properties": {
+        "id": 29,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.441169,
+          15.164474
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.595292,
+          15.63324
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.293672,
+          16.494182
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.517222,
+          16.29117
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.305455,
+          16.022566
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.667328,
+          15.961443
+        ]
+      },
+      "properties": {
+        "id": 36,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.930724,
+          15.680586
+        ]
+      },
+      "properties": {
+        "id": 37,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.250879,
+          15.395084
+        ]
+      },
+      "properties": {
+        "id": 38,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.805778,
+          16.368942
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.413455,
+          15.958424
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.309069,
+          16.143766
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.500858,
+          15.795531
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.893648,
+          15.029215
+        ]
+      },
+      "properties": {
+        "id": 43,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.603819,
+          15.728986
+        ]
+      },
+      "properties": {
+        "id": 46,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.692587,
+          16.148752
+        ]
+      },
+      "properties": {
+        "id": 47,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.897585,
+          15.824705
+        ]
+      },
+      "properties": {
+        "id": 48,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.817697,
+          15.634707
+        ]
+      },
+      "properties": {
+        "id": 49,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.801727,
+          16.094897
+        ]
+      },
+      "properties": {
+        "id": 50,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.474817,
+          16.492724
+        ]
+      },
+      "properties": {
+        "id": 51,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.681506,
+          15.776364
+        ]
+      },
+      "properties": {
+        "id": 52,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.382463,
+          15.507128
+        ]
+      },
+      "properties": {
+        "id": 53,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.60649,
+          15.330326
+        ]
+      },
+      "properties": {
+        "id": 54,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.85813,
+          15.343413
+        ]
+      },
+      "properties": {
+        "id": 55,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.857007,
+          15.106286
+        ]
+      },
+      "properties": {
+        "id": 56,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.698468,
+          15.321355
+        ]
+      },
+      "properties": {
+        "id": 57,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.209007,
+          15.856565
+        ]
+      },
+      "properties": {
+        "id": 58,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.135368,
+          15.646577
+        ]
+      },
+      "properties": {
+        "id": 60,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.510047,
+          16.093614
+        ]
+      },
+      "properties": {
+        "id": 61,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.103932,
+          15.147627
+        ]
+      },
+      "properties": {
+        "id": 62,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.872985,
+          16.292509
+        ]
+      },
+      "properties": {
+        "id": 63,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.132822,
+          15.67292
+        ]
+      },
+      "properties": {
+        "id": 64,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.884898,
+          15.37471
+        ]
+      },
+      "properties": {
+        "id": 65,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.754041,
+          16.498924
+        ]
+      },
+      "properties": {
+        "id": 67,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.773044,
+          16.38955
+        ]
+      },
+      "properties": {
+        "id": 68,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.820621,
+          15.728462
+        ]
+      },
+      "properties": {
+        "id": 69,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.06846,
+          15.087953
+        ]
+      },
+      "properties": {
+        "id": 70,
+        "crop_type": "Cotton",
+        "crop_class": "Cotton",
+        "crop_label": 2,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.676106,
+          15.397805
+        ]
+      },
+      "properties": {
+        "id": 71,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.935976,
+          15.634511
+        ]
+      },
+      "properties": {
+        "id": 72,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.577612,
+          15.833652
+        ]
+      },
+      "properties": {
+        "id": 73,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.953064,
+          15.445062
+        ]
+      },
+      "properties": {
+        "id": 74,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.254276,
+          15.876266
+        ]
+      },
+      "properties": {
+        "id": 76,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.392553,
+          15.278737
+        ]
+      },
+      "properties": {
+        "id": 78,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.67983,
+          15.352806
+        ]
+      },
+      "properties": {
+        "id": 79,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.391779,
+          15.369323
+        ]
+      },
+      "properties": {
+        "id": 80,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.375508,
+          15.628837
+        ]
+      },
+      "properties": {
+        "id": 81,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.806389,
+          16.402059
+        ]
+      },
+      "properties": {
+        "id": 82,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.91,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.093679,
+          15.358029
+        ]
+      },
+      "properties": {
+        "id": 83,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.974266,
+          15.449996
+        ]
+      },
+      "properties": {
+        "id": 84,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.187428,
+          15.108815
+        ]
+      },
+      "properties": {
+        "id": 85,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.609891,
+          16.494145
+        ]
+      },
+      "properties": {
+        "id": 86,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.899889,
+          15.397801
+        ]
+      },
+      "properties": {
+        "id": 87,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.054291,
+          16.318905
+        ]
+      },
+      "properties": {
+        "id": 88,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.55531,
+          16.250617
+        ]
+      },
+      "properties": {
+        "id": 89,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.949068,
+          16.225656
+        ]
+      },
+      "properties": {
+        "id": 91,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.329835,
+          15.160554
+        ]
+      },
+      "properties": {
+        "id": 93,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.576418,
+          15.907245
+        ]
+      },
+      "properties": {
+        "id": 94,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.895976,
+          15.951357
+        ]
+      },
+      "properties": {
+        "id": 95,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.85,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.45567,
+          16.156679
+        ]
+      },
+      "properties": {
+        "id": 98,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.327521,
+          16.111846
+        ]
+      },
+      "properties": {
+        "id": 99,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.612866,
+          15.014505
+        ]
+      },
+      "properties": {
+        "id": 100,
+        "crop_type": "Soybean",
+        "crop_class": "Soybean",
+        "crop_label": 10,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.318385,
+          16.355893
+        ]
+      },
+      "properties": {
+        "id": 101,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.848472,
+          15.462388
+        ]
+      },
+      "properties": {
+        "id": 103,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.848387,
+          16.291054
+        ]
+      },
+      "properties": {
+        "id": 104,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.65419,
+          15.374295
+        ]
+      },
+      "properties": {
+        "id": 105,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.109566,
+          16.326202
+        ]
+      },
+      "properties": {
+        "id": 106,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.894822,
+          15.23183
+        ]
+      },
+      "properties": {
+        "id": 107,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.716158,
+          16.464309
+        ]
+      },
+      "properties": {
+        "id": 108,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.604847,
+          15.03718
+        ]
+      },
+      "properties": {
+        "id": 109,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.703353,
+          16.396224
+        ]
+      },
+      "properties": {
+        "id": 110,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.900209,
+          16.216124
+        ]
+      },
+      "properties": {
+        "id": 111,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.80825,
+          15.162143
+        ]
+      },
+      "properties": {
+        "id": 112,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.72488,
+          15.333651
+        ]
+      },
+      "properties": {
+        "id": 113,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.693018,
+          15.457786
+        ]
+      },
+      "properties": {
+        "id": 114,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.789695,
+          15.035497
+        ]
+      },
+      "properties": {
+        "id": 115,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.950334,
+          16.296529
+        ]
+      },
+      "properties": {
+        "id": 116,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.78,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.099518,
+          15.962223
+        ]
+      },
+      "properties": {
+        "id": 117,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.767852,
+          16.455601
+        ]
+      },
+      "properties": {
+        "id": 119,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.662604,
+          15.3982
+        ]
+      },
+      "properties": {
+        "id": 120,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.970516,
+          16.092818
+        ]
+      },
+      "properties": {
+        "id": 121,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.077793,
+          15.767135
+        ]
+      },
+      "properties": {
+        "id": 122,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.307678,
+          16.388363
+        ]
+      },
+      "properties": {
+        "id": 124,
+        "crop_type": "Maize",
+        "crop_class": "Maize",
+        "crop_label": 6,
+        "season": "Kharif_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.505943,
+          16.112925
+        ]
+      },
+      "properties": {
+        "id": 125,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.496357,
+          15.104961
+        ]
+      },
+      "properties": {
+        "id": 126,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.772023,
+          15.470873
+        ]
+      },
+      "properties": {
+        "id": 127,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.92,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.963927,
+          15.450483
+        ]
+      },
+      "properties": {
+        "id": 128,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.910546,
+          15.63067
+        ]
+      },
+      "properties": {
+        "id": 130,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.423272,
+          16.354208
+        ]
+      },
+      "properties": {
+        "id": 131,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.500609,
+          15.821906
+        ]
+      },
+      "properties": {
+        "id": 132,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.369977,
+          15.644832
+        ]
+      },
+      "properties": {
+        "id": 133,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.16324,
+          15.697482
+        ]
+      },
+      "properties": {
+        "id": 134,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.851771,
+          15.709779
+        ]
+      },
+      "properties": {
+        "id": 135,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.627193,
+          15.254537
+        ]
+      },
+      "properties": {
+        "id": 136,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.002782,
+          15.949411
+        ]
+      },
+      "properties": {
+        "id": 137,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.509194,
+          16.126707
+        ]
+      },
+      "properties": {
+        "id": 138,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.536638,
+          15.298695
+        ]
+      },
+      "properties": {
+        "id": 139,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.444648,
+          15.621662
+        ]
+      },
+      "properties": {
+        "id": 141,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.241566,
+          16.044531
+        ]
+      },
+      "properties": {
+        "id": 142,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.508317,
+          15.984087
+        ]
+      },
+      "properties": {
+        "id": 143,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.659881,
+          16.155069
+        ]
+      },
+      "properties": {
+        "id": 144,
+        "crop_type": "Jowar",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.936949,
+          15.26383
+        ]
+      },
+      "properties": {
+        "id": 145,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.873797,
+          15.075328
+        ]
+      },
+      "properties": {
+        "id": 146,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.702125,
+          15.684693
+        ]
+      },
+      "properties": {
+        "id": 147,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.393178,
+          16.481839
+        ]
+      },
+      "properties": {
+        "id": 148,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.418978,
+          16.337139
+        ]
+      },
+      "properties": {
+        "id": 149,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.92,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.745854,
+          15.757167
+        ]
+      },
+      "properties": {
+        "id": 150,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.615483,
+          16.345812
+        ]
+      },
+      "properties": {
+        "id": 151,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.87086,
+          15.388787
+        ]
+      },
+      "properties": {
+        "id": 152,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.28195,
+          16.148721
+        ]
+      },
+      "properties": {
+        "id": 153,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.616225,
+          15.411896
+        ]
+      },
+      "properties": {
+        "id": 154,
+        "crop_type": "Bajra",
+        "crop_class": "Bajra",
+        "crop_label": 0,
+        "season": "Kharif_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.979564,
+          15.407573
+        ]
+      },
+      "properties": {
+        "id": 155,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.846892,
+          15.207561
+        ]
+      },
+      "properties": {
+        "id": 156,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.91,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.596343,
+          16.059629
+        ]
+      },
+      "properties": {
+        "id": 157,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.82,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.123661,
+          15.813917
+        ]
+      },
+      "properties": {
+        "id": 158,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.857258,
+          15.630215
+        ]
+      },
+      "properties": {
+        "id": 159,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.785098,
+          16.043284
+        ]
+      },
+      "properties": {
+        "id": 160,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.508844,
+          15.570572
+        ]
+      },
+      "properties": {
+        "id": 161,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.780172,
+          16.130213
+        ]
+      },
+      "properties": {
+        "id": 162,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.621274,
+          15.628532
+        ]
+      },
+      "properties": {
+        "id": 163,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.830808,
+          15.904879
+        ]
+      },
+      "properties": {
+        "id": 164,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.543537,
+          15.653754
+        ]
+      },
+      "properties": {
+        "id": 165,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.106475,
+          16.018713
+        ]
+      },
+      "properties": {
+        "id": 166,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.691442,
+          15.701085
+        ]
+      },
+      "properties": {
+        "id": 167,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.09103,
+          15.04045
+        ]
+      },
+      "properties": {
+        "id": 168,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.575427,
+          15.692548
+        ]
+      },
+      "properties": {
+        "id": 170,
+        "crop_type": "Groundnut",
+        "crop_class": "Groundnut",
+        "crop_label": 4,
+        "season": "Kharif_2023",
+        "confidence": 0.81,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.990269,
+          15.31749
+        ]
+      },
+      "properties": {
+        "id": 171,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.628015,
+          15.568689
+        ]
+      },
+      "properties": {
+        "id": 172,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.999862,
+          15.809129
+        ]
+      },
+      "properties": {
+        "id": 174,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.67185,
+          15.975216
+        ]
+      },
+      "properties": {
+        "id": 175,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.924418,
+          16.13135
+        ]
+      },
+      "properties": {
+        "id": 176,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.345954,
+          16.004188
+        ]
+      },
+      "properties": {
+        "id": 178,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.650347,
+          16.049197
+        ]
+      },
+      "properties": {
+        "id": 179,
+        "crop_type": "Paddy",
+        "crop_class": "Paddy",
+        "crop_label": 8,
+        "season": "Kharif_2023",
+        "confidence": 0.75,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.967936,
+          15.038518
+        ]
+      },
+      "properties": {
+        "id": 182,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.094982,
+          16.437259
+        ]
+      },
+      "properties": {
+        "id": 183,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.535922,
+          15.113995
+        ]
+      },
+      "properties": {
+        "id": 184,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.658721,
+          15.152852
+        ]
+      },
+      "properties": {
+        "id": 185,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.681583,
+          15.900617
+        ]
+      },
+      "properties": {
+        "id": 186,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.020806,
+          16.173953
+        ]
+      },
+      "properties": {
+        "id": 187,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.258941,
+          15.555856
+        ]
+      },
+      "properties": {
+        "id": 188,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.453378,
+          16.441181
+        ]
+      },
+      "properties": {
+        "id": 190,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.153231,
+          16.060963
+        ]
+      },
+      "properties": {
+        "id": 191,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.92,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.905124,
+          16.448211
+        ]
+      },
+      "properties": {
+        "id": 192,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.225246,
+          15.807259
+        ]
+      },
+      "properties": {
+        "id": 193,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.902593,
+          16.096539
+        ]
+      },
+      "properties": {
+        "id": 194,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.629994,
+          16.246097
+        ]
+      },
+      "properties": {
+        "id": 195,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.197063,
+          15.365795
+        ]
+      },
+      "properties": {
+        "id": 196,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.54305,
+          15.568484
+        ]
+      },
+      "properties": {
+        "id": 197,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.81818,
+          15.27276
+        ]
+      },
+      "properties": {
+        "id": 198,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82048,
+          15.510508
+        ]
+      },
+      "properties": {
+        "id": 199,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.515227,
+          15.414403
+        ]
+      },
+      "properties": {
+        "id": 200,
+        "crop_type": "Tur_Dal",
+        "crop_class": "Pulses",
+        "crop_label": 9,
+        "season": "Kharif_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.580112,
+          15.128419
+        ]
+      },
+      "properties": {
+        "id": 201,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.535914,
+          16.137247
+        ]
+      },
+      "properties": {
+        "id": 202,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.537681,
+          15.332395
+        ]
+      },
+      "properties": {
+        "id": 204,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.209891,
+          15.872333
+        ]
+      },
+      "properties": {
+        "id": 205,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.618903,
+          15.638256
+        ]
+      },
+      "properties": {
+        "id": 206,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.906375,
+          16.054282
+        ]
+      },
+      "properties": {
+        "id": 207,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.643284,
+          15.803796
+        ]
+      },
+      "properties": {
+        "id": 209,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.76,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.226298,
+          15.324577
+        ]
+      },
+      "properties": {
+        "id": 210,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.286955,
+          16.464911
+        ]
+      },
+      "properties": {
+        "id": 211,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.791176,
+          15.150789
+        ]
+      },
+      "properties": {
+        "id": 212,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.77,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.521223,
+          15.269162
+        ]
+      },
+      "properties": {
+        "id": 213,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.961442,
+          15.411467
+        ]
+      },
+      "properties": {
+        "id": 214,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.689419,
+          16.046126
+        ]
+      },
+      "properties": {
+        "id": 215,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.80908,
+          15.736318
+        ]
+      },
+      "properties": {
+        "id": 216,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.160703,
+          15.704095
+        ]
+      },
+      "properties": {
+        "id": 217,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.911595,
+          15.077065
+        ]
+      },
+      "properties": {
+        "id": 218,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.955753,
+          15.844259
+        ]
+      },
+      "properties": {
+        "id": 221,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 1.0,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.646665,
+          15.177677
+        ]
+      },
+      "properties": {
+        "id": 222,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.838531,
+          16.186111
+        ]
+      },
+      "properties": {
+        "id": 223,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.164082,
+          15.675772
+        ]
+      },
+      "properties": {
+        "id": 224,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.95807,
+          16.485047
+        ]
+      },
+      "properties": {
+        "id": 225,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.610134,
+          15.914446
+        ]
+      },
+      "properties": {
+        "id": 226,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.816538,
+          15.311682
+        ]
+      },
+      "properties": {
+        "id": 227,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.175756,
+          15.004014
+        ]
+      },
+      "properties": {
+        "id": 229,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.847214,
+          15.436889
+        ]
+      },
+      "properties": {
+        "id": 230,
+        "crop_type": "Wheat",
+        "crop_class": "Wheat",
+        "crop_label": 14,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.181047,
+          16.054481
+        ]
+      },
+      "properties": {
+        "id": 231,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.681742,
+          16.385867
+        ]
+      },
+      "properties": {
+        "id": 232,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.900503,
+          15.991775
+        ]
+      },
+      "properties": {
+        "id": 233,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.471452,
+          15.816844
+        ]
+      },
+      "properties": {
+        "id": 234,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.607115,
+          16.239947
+        ]
+      },
+      "properties": {
+        "id": 235,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.623437,
+          15.461418
+        ]
+      },
+      "properties": {
+        "id": 236,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.68653,
+          15.432916
+        ]
+      },
+      "properties": {
+        "id": 237,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.914014,
+          16.049601
+        ]
+      },
+      "properties": {
+        "id": 238,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.983482,
+          15.648043
+        ]
+      },
+      "properties": {
+        "id": 240,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.942867,
+          15.13699
+        ]
+      },
+      "properties": {
+        "id": 241,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.926179,
+          15.862799
+        ]
+      },
+      "properties": {
+        "id": 242,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.205751,
+          16.134403
+        ]
+      },
+      "properties": {
+        "id": 244,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.772234,
+          16.374109
+        ]
+      },
+      "properties": {
+        "id": 245,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.999963,
+          15.521942
+        ]
+      },
+      "properties": {
+        "id": 247,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.994705,
+          16.2866
+        ]
+      },
+      "properties": {
+        "id": 248,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.91779,
+          15.432327
+        ]
+      },
+      "properties": {
+        "id": 249,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.182239,
+          15.825145
+        ]
+      },
+      "properties": {
+        "id": 250,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.955277,
+          15.484911
+        ]
+      },
+      "properties": {
+        "id": 251,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.982179,
+          15.771894
+        ]
+      },
+      "properties": {
+        "id": 252,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.119871,
+          15.81389
+        ]
+      },
+      "properties": {
+        "id": 253,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.634665,
+          15.542669
+        ]
+      },
+      "properties": {
+        "id": 254,
+        "crop_type": "Jowar_Rabi",
+        "crop_class": "Jowar",
+        "crop_label": 5,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.805337,
+          16.139986
+        ]
+      },
+      "properties": {
+        "id": 255,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.157174,
+          16.391509
+        ]
+      },
+      "properties": {
+        "id": 256,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.95972,
+          15.182139
+        ]
+      },
+      "properties": {
+        "id": 257,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.737567,
+          15.358946
+        ]
+      },
+      "properties": {
+        "id": 258,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.639814,
+          15.828377
+        ]
+      },
+      "properties": {
+        "id": 259,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.247563,
+          16.248215
+        ]
+      },
+      "properties": {
+        "id": 261,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.910137,
+          15.763308
+        ]
+      },
+      "properties": {
+        "id": 262,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.865596,
+          16.470367
+        ]
+      },
+      "properties": {
+        "id": 263,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.882802,
+          15.575379
+        ]
+      },
+      "properties": {
+        "id": 264,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.79604,
+          16.318989
+        ]
+      },
+      "properties": {
+        "id": 265,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.122414,
+          16.185009
+        ]
+      },
+      "properties": {
+        "id": 266,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.98,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.730824,
+          15.761607
+        ]
+      },
+      "properties": {
+        "id": 267,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.380407,
+          15.447834
+        ]
+      },
+      "properties": {
+        "id": 268,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 1.0,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.722893,
+          15.734461
+        ]
+      },
+      "properties": {
+        "id": 269,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.327876,
+          15.517686
+        ]
+      },
+      "properties": {
+        "id": 270,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.982666,
+          15.683017
+        ]
+      },
+      "properties": {
+        "id": 271,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.357696,
+          16.046248
+        ]
+      },
+      "properties": {
+        "id": 272,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.565471,
+          16.163317
+        ]
+      },
+      "properties": {
+        "id": 273,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.717113,
+          16.057842
+        ]
+      },
+      "properties": {
+        "id": 274,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.731121,
+          15.995533
+        ]
+      },
+      "properties": {
+        "id": 275,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.555529,
+          15.742993
+        ]
+      },
+      "properties": {
+        "id": 276,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.80455,
+          15.885271
+        ]
+      },
+      "properties": {
+        "id": 277,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.288927,
+          15.660459
+        ]
+      },
+      "properties": {
+        "id": 278,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.114968,
+          16.083666
+        ]
+      },
+      "properties": {
+        "id": 279,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.204236,
+          15.231542
+        ]
+      },
+      "properties": {
+        "id": 280,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.539057,
+          15.507842
+        ]
+      },
+      "properties": {
+        "id": 281,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.778512,
+          16.277648
+        ]
+      },
+      "properties": {
+        "id": 282,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.974992,
+          15.570014
+        ]
+      },
+      "properties": {
+        "id": 283,
+        "crop_type": "Chickpea",
+        "crop_class": "Chickpea",
+        "crop_label": 1,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.446742,
+          15.102631
+        ]
+      },
+      "properties": {
+        "id": 285,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.62015,
+          16.496139
+        ]
+      },
+      "properties": {
+        "id": 286,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.450622,
+          15.147665
+        ]
+      },
+      "properties": {
+        "id": 287,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.541002,
+          15.665518
+        ]
+      },
+      "properties": {
+        "id": 288,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.694215,
+          15.068986
+        ]
+      },
+      "properties": {
+        "id": 289,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.718355,
+          15.562262
+        ]
+      },
+      "properties": {
+        "id": 290,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.688779,
+          15.848892
+        ]
+      },
+      "properties": {
+        "id": 291,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.806259,
+          15.118453
+        ]
+      },
+      "properties": {
+        "id": 292,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.880966,
+          15.691725
+        ]
+      },
+      "properties": {
+        "id": 294,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.70695,
+          15.014096
+        ]
+      },
+      "properties": {
+        "id": 295,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.736963,
+          16.016416
+        ]
+      },
+      "properties": {
+        "id": 296,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.381358,
+          15.518348
+        ]
+      },
+      "properties": {
+        "id": 297,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.875147,
+          15.636463
+        ]
+      },
+      "properties": {
+        "id": 298,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.07704,
+          15.298825
+        ]
+      },
+      "properties": {
+        "id": 299,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.357884,
+          15.355809
+        ]
+      },
+      "properties": {
+        "id": 300,
+        "crop_type": "Safflower",
+        "crop_class": "Oilseeds",
+        "crop_label": 7,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.942846,
+          16.489038
+        ]
+      },
+      "properties": {
+        "id": 301,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.911721,
+          15.987345
+        ]
+      },
+      "properties": {
+        "id": 302,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.245091,
+          15.90961
+        ]
+      },
+      "properties": {
+        "id": 304,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.69829,
+          15.429291
+        ]
+      },
+      "properties": {
+        "id": 305,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.88,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.454927,
+          15.528481
+        ]
+      },
+      "properties": {
+        "id": 306,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.581393,
+          16.016647
+        ]
+      },
+      "properties": {
+        "id": 307,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.442372,
+          16.257506
+        ]
+      },
+      "properties": {
+        "id": 308,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.963399,
+          15.969511
+        ]
+      },
+      "properties": {
+        "id": 309,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.621221,
+          15.442666
+        ]
+      },
+      "properties": {
+        "id": 311,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.75,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.309112,
+          15.19824
+        ]
+      },
+      "properties": {
+        "id": 312,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.87023,
+          15.796279
+        ]
+      },
+      "properties": {
+        "id": 313,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.737035,
+          15.385455
+        ]
+      },
+      "properties": {
+        "id": 314,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.619839,
+          16.209733
+        ]
+      },
+      "properties": {
+        "id": 315,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.790211,
+          16.44975
+        ]
+      },
+      "properties": {
+        "id": 317,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.950905,
+          16.469913
+        ]
+      },
+      "properties": {
+        "id": 318,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.182179,
+          15.804858
+        ]
+      },
+      "properties": {
+        "id": 320,
+        "crop_type": "Sunflower",
+        "crop_class": "Sunflower",
+        "crop_label": 12,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.37684,
+          16.008511
+        ]
+      },
+      "properties": {
+        "id": 321,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.662519,
+          16.410438
+        ]
+      },
+      "properties": {
+        "id": 322,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.77,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.826352,
+          15.037537
+        ]
+      },
+      "properties": {
+        "id": 323,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.864081,
+          16.235783
+        ]
+      },
+      "properties": {
+        "id": 325,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.709666,
+          15.612444
+        ]
+      },
+      "properties": {
+        "id": 326,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.98,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.703496,
+          16.330889
+        ]
+      },
+      "properties": {
+        "id": 328,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.61471,
+          16.005729
+        ]
+      },
+      "properties": {
+        "id": 329,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.98,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.613404,
+          15.62869
+        ]
+      },
+      "properties": {
+        "id": 330,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.75,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.648532,
+          15.622327
+        ]
+      },
+      "properties": {
+        "id": 331,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.165075,
+          15.555795
+        ]
+      },
+      "properties": {
+        "id": 333,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.649032,
+          16.283175
+        ]
+      },
+      "properties": {
+        "id": 334,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.966764,
+          15.816699
+        ]
+      },
+      "properties": {
+        "id": 335,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.81,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.182076,
+          16.27205
+        ]
+      },
+      "properties": {
+        "id": 337,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.602915,
+          15.846867
+        ]
+      },
+      "properties": {
+        "id": 340,
+        "crop_type": "Onion",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.93,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.823927,
+          15.310736
+        ]
+      },
+      "properties": {
+        "id": 341,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.721331,
+          15.492839
+        ]
+      },
+      "properties": {
+        "id": 342,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.97,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.875981,
+          15.194988
+        ]
+      },
+      "properties": {
+        "id": 344,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.75,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.856897,
+          16.184977
+        ]
+      },
+      "properties": {
+        "id": 346,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.578599,
+          15.261369
+        ]
+      },
+      "properties": {
+        "id": 347,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.618498,
+          15.789128
+        ]
+      },
+      "properties": {
+        "id": 348,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.84,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.800471,
+          16.17484
+        ]
+      },
+      "properties": {
+        "id": 351,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.102426,
+          15.718473
+        ]
+      },
+      "properties": {
+        "id": 353,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.449615,
+          15.412524
+        ]
+      },
+      "properties": {
+        "id": 356,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.991942,
+          15.487778
+        ]
+      },
+      "properties": {
+        "id": 357,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.86,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.779189,
+          16.052669
+        ]
+      },
+      "properties": {
+        "id": 359,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.58126,
+          16.153444
+        ]
+      },
+      "properties": {
+        "id": 360,
+        "crop_type": "Fallow",
+        "crop_class": "Fallow",
+        "crop_label": 3,
+        "season": "Rabi_2023",
+        "confidence": 0.76,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.84274,
+          15.677332
+        ]
+      },
+      "properties": {
+        "id": 361,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.8,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.497662,
+          15.640146
+        ]
+      },
+      "properties": {
+        "id": 363,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.81,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.717654,
+          16.108194
+        ]
+      },
+      "properties": {
+        "id": 366,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.34238,
+          15.879698
+        ]
+      },
+      "properties": {
+        "id": 367,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.8,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.030397,
+          15.183347
+        ]
+      },
+      "properties": {
+        "id": 368,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.802138,
+          16.125426
+        ]
+      },
+      "properties": {
+        "id": 369,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.400615,
+          16.452598
+        ]
+      },
+      "properties": {
+        "id": 370,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.81,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.819108,
+          15.866878
+        ]
+      },
+      "properties": {
+        "id": 371,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.662328,
+          15.336367
+        ]
+      },
+      "properties": {
+        "id": 372,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.643908,
+          15.551342
+        ]
+      },
+      "properties": {
+        "id": 373,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.87,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.767733,
+          16.210832
+        ]
+      },
+      "properties": {
+        "id": 374,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.99,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.42036,
+          16.22764
+        ]
+      },
+      "properties": {
+        "id": 375,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.893626,
+          15.039381
+        ]
+      },
+      "properties": {
+        "id": 376,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.95,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.770624,
+          15.401172
+        ]
+      },
+      "properties": {
+        "id": 377,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.349482,
+          16.304794
+        ]
+      },
+      "properties": {
+        "id": 379,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.822699,
+          16.119168
+        ]
+      },
+      "properties": {
+        "id": 381,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.05508,
+          15.511344
+        ]
+      },
+      "properties": {
+        "id": 382,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.736115,
+          15.078913
+        ]
+      },
+      "properties": {
+        "id": 384,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.908154,
+          16.010953
+        ]
+      },
+      "properties": {
+        "id": 385,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.9,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.163066,
+          15.728493
+        ]
+      },
+      "properties": {
+        "id": 386,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.670726,
+          16.132415
+        ]
+      },
+      "properties": {
+        "id": 387,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.83,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.517729,
+          15.42487
+        ]
+      },
+      "properties": {
+        "id": 388,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.85,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.568126,
+          16.000699
+        ]
+      },
+      "properties": {
+        "id": 389,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.82,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.511531,
+          15.898987
+        ]
+      },
+      "properties": {
+        "id": 390,
+        "crop_type": "Sugarcane",
+        "crop_class": "Sugarcane",
+        "crop_label": 11,
+        "season": "Rabi_2023",
+        "confidence": 0.79,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.705852,
+          15.316851
+        ]
+      },
+      "properties": {
+        "id": 391,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.78,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.511595,
+          15.492184
+        ]
+      },
+      "properties": {
+        "id": 392,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.92,
+        "split": "test"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.070311,
+          15.263542
+        ]
+      },
+      "properties": {
+        "id": 393,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.750031,
+          15.750394
+        ]
+      },
+      "properties": {
+        "id": 394,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.94,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.881744,
+          15.028112
+        ]
+      },
+      "properties": {
+        "id": 396,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.96,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3601,
+          15.863639
+        ]
+      },
+      "properties": {
+        "id": 397,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.91,
+        "split": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.701983,
+          15.487152
+        ]
+      },
+      "properties": {
+        "id": 399,
+        "crop_type": "Vegetables",
+        "crop_class": "Vegetables",
+        "crop_label": 13,
+        "season": "Rabi_2023",
+        "confidence": 0.89,
+        "split": "train"
+      }
+    }
+  ]
+}

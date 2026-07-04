@@ -1,0 +1,23 @@
+# GEE Export Instructions for KrishiDrishti
+# ==========================================
+# Run these scripts in Google Earth Engine Code Editor:
+# https://code.earthengine.google.com/
+
+# 1. Sentinel-2 Monthly Composites:
+#    File: Satellite/Sentinel2/GEE_Sentinel2_Export.js
+#    Output: Monthly median composites with NDVI, EVI, NDWI, NDMI, SAVI
+#    Resolution: 10m
+
+# 2. Sentinel-1 Monthly SAR Composites:
+#    File: Satellite/Sentinel1/GEE_Sentinel1_Export.js
+#    Output: Monthly VV, VH, RVI composites
+#    Resolution: 10m
+
+# 3. MODIS + VIIRS:
+#    File: Satellite/MODIS/GEE_MODIS_VIIRS_Export.js
+#    Output: MODIS NDVI, LST, SMAP soil moisture
+
+# AOI for GEE:
+# var aoi = ee.Geometry.Rectangle([74.5, 15.0, 76.0, 16.5]);
+# var startDate = '2023-01-01';
+# var endDate = '2024-12-31';

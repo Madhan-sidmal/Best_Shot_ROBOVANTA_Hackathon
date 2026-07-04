@@ -1,0 +1,578 @@
+{
+  "ndvi_mean": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.1503,
+    "max": 0.4159,
+    "null_count": 0
+  },
+  "ndvi_std": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.1067,
+    "max": 0.1633,
+    "null_count": 0
+  },
+  "ndvi_min": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0,
+    "max": 0.1205,
+    "null_count": 0
+  },
+  "ndvi_max": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.3309,
+    "max": 0.5633,
+    "null_count": 0
+  },
+  "ndvi_median": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0819,
+    "max": 0.45,
+    "null_count": 0
+  },
+  "evi_mean": {
+    "dtype": "float64",
+    "description": "Enhanced Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.2249,
+    "max": 0.55,
+    "null_count": 0
+  },
+  "evi_std": {
+    "dtype": "float64",
+    "description": "Enhanced Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.1219,
+    "max": 0.2044,
+    "null_count": 0
+  },
+  "evi_max": {
+    "dtype": "float64",
+    "description": "Enhanced Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.4645,
+    "max": 0.6994,
+    "null_count": 0
+  },
+  "savi_mean": {
+    "dtype": "float64",
+    "description": "Soil-Adjusted Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.1503,
+    "max": 0.4159,
+    "null_count": 0
+  },
+  "savi_max": {
+    "dtype": "float64",
+    "description": "Soil-Adjusted Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.3309,
+    "max": 0.5633,
+    "null_count": 0
+  },
+  "ndwi_mean": {
+    "dtype": "float64",
+    "description": "Normalized Difference Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.1032,
+    "max": 0.2918,
+    "null_count": 0
+  },
+  "ndwi_std": {
+    "dtype": "float64",
+    "description": "Normalized Difference Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0738,
+    "max": 0.1147,
+    "null_count": 0
+  },
+  "ndwi_min": {
+    "dtype": "float64",
+    "description": "Normalized Difference Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": -0.0513,
+    "max": 0.0799,
+    "null_count": 0
+  },
+  "ndmi_mean": {
+    "dtype": "float64",
+    "description": "Normalized Difference Moisture Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0958,
+    "max": 0.2718,
+    "null_count": 0
+  },
+  "ndmi_std": {
+    "dtype": "float64",
+    "description": "Normalized Difference Moisture Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0677,
+    "max": 0.1135,
+    "null_count": 0
+  },
+  "lswi_mean": {
+    "dtype": "float64",
+    "description": "Land Surface Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.0817,
+    "max": 0.2307,
+    "null_count": 0
+  },
+  "vv_db_mean": {
+    "dtype": "float64",
+    "description": "VV backscatter (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": -7.862,
+    "max": -5.996,
+    "null_count": 0
+  },
+  "vv_db_std": {
+    "dtype": "float64",
+    "description": "VV backscatter (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": 1.6479,
+    "max": 2.2613,
+    "null_count": 0
+  },
+  "vh_db_mean": {
+    "dtype": "float64",
+    "description": "VH backscatter (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": -14.5884,
+    "max": -11.6178,
+    "null_count": 0
+  },
+  "vh_db_std": {
+    "dtype": "float64",
+    "description": "VH backscatter (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": 2.5894,
+    "max": 3.426,
+    "null_count": 0
+  },
+  "vh_vv_ratio_mean": {
+    "dtype": "float64",
+    "description": "Cross-pol ratio VH/VV (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": -6.8555,
+    "max": -5.4649,
+    "null_count": 0
+  },
+  "vh_vv_ratio_std": {
+    "dtype": "float64",
+    "description": "Cross-pol ratio VH/VV (dB)",
+    "source": "Sentinel-1 (simulated)",
+    "min": 0.9354,
+    "max": 1.7057,
+    "null_count": 0
+  },
+  "rvi_mean": {
+    "dtype": "float64",
+    "description": "Radar Vegetation Index 4*VH/(VV+VH)",
+    "source": "Sentinel-1 (simulated)",
+    "min": 0.7015,
+    "max": 0.901,
+    "null_count": 0
+  },
+  "rvi_max": {
+    "dtype": "float64",
+    "description": "Radar Vegetation Index 4*VH/(VV+VH)",
+    "source": "Sentinel-1 (simulated)",
+    "min": 0.9955,
+    "max": 1.4989,
+    "null_count": 0
+  },
+  "vci_mean": {
+    "dtype": "float64",
+    "description": "Vegetation Condition Index",
+    "source": "Derived (NDVI)",
+    "min": 0.3168,
+    "max": 0.7148,
+    "null_count": 0
+  },
+  "vci_min": {
+    "dtype": "float64",
+    "description": "Vegetation Condition Index",
+    "source": "Derived (NDVI)",
+    "min": 0.0,
+    "max": 0.0,
+    "null_count": 0
+  },
+  "ndwi_anomaly_mean": {
+    "dtype": "float64",
+    "description": "Normalized Difference Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": -0.0,
+    "max": 0.0,
+    "null_count": 0
+  },
+  "ndwi_anomaly_min": {
+    "dtype": "float64",
+    "description": "Normalized Difference Water Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": -2.9574,
+    "max": -1.0109,
+    "null_count": 0
+  },
+  "sar_moisture_proxy_mean": {
+    "dtype": "float64",
+    "description": "SAR moisture proxy (VH z-score)",
+    "source": "Sentinel-1 (simulated)",
+    "min": -0.0,
+    "max": 0.0,
+    "null_count": 0
+  },
+  "sar_moisture_proxy_min": {
+    "dtype": "float64",
+    "description": "SAR moisture proxy (VH z-score)",
+    "source": "Sentinel-1 (simulated)",
+    "min": -2.731,
+    "max": -1.449,
+    "null_count": 0
+  },
+  "csi_mean": {
+    "dtype": "float64",
+    "description": "Combined Stress Index (VCI+NDWI+SAR)",
+    "source": "Derived",
+    "min": 0.4266,
+    "max": 0.5887,
+    "null_count": 0
+  },
+  "csi_min": {
+    "dtype": "float64",
+    "description": "Combined Stress Index (VCI+NDWI+SAR)",
+    "source": "Derived",
+    "min": 0.0238,
+    "max": 0.2887,
+    "null_count": 0
+  },
+  "temp_mean_mean": {
+    "dtype": "float64",
+    "description": "Temperature feature",
+    "source": "NASA POWER",
+    "min": 24.807,
+    "max": 27.1233,
+    "null_count": 0
+  },
+  "temp_max_max": {
+    "dtype": "float64",
+    "description": "Temperature feature",
+    "source": "NASA POWER",
+    "min": 38.22,
+    "max": 41.5,
+    "null_count": 0
+  },
+  "temp_min_min": {
+    "dtype": "float64",
+    "description": "Temperature feature",
+    "source": "NASA POWER",
+    "min": 10.59,
+    "max": 14.74,
+    "null_count": 0
+  },
+  "temp_range_mean": {
+    "dtype": "float64",
+    "description": "Temperature feature",
+    "source": "NASA POWER",
+    "min": 11.5267,
+    "max": 16.3861,
+    "null_count": 0
+  },
+  "rh_mean_mean": {
+    "dtype": "float64",
+    "description": "Relative humidity (%)",
+    "source": "NASA POWER",
+    "min": 53.5754,
+    "max": 74.893,
+    "null_count": 0
+  },
+  "wind_mean_mean": {
+    "dtype": "float64",
+    "description": "Wind speed at 2m (m/s)",
+    "source": "NASA POWER",
+    "min": 0.4698,
+    "max": 3.3778,
+    "null_count": 0
+  },
+  "solar_rad_mean": {
+    "dtype": "float64",
+    "description": "Solar radiation (MJ/m2/day)",
+    "source": "NASA POWER",
+    "min": 17.2172,
+    "max": 19.4576,
+    "null_count": 0
+  },
+  "precip_8day_sum": {
+    "dtype": "float64",
+    "description": "Precipitation (mm)",
+    "source": "NASA POWER",
+    "min": 433.44,
+    "max": 2442.55,
+    "null_count": 0
+  },
+  "precip_8day_mean": {
+    "dtype": "float64",
+    "description": "Precipitation (mm)",
+    "source": "NASA POWER",
+    "min": 9.4226,
+    "max": 53.0989,
+    "null_count": 0
+  },
+  "precip_8day_max": {
+    "dtype": "float64",
+    "description": "Precipitation (mm)",
+    "source": "NASA POWER",
+    "min": 87.23,
+    "max": 538.71,
+    "null_count": 0
+  },
+  "eto_8day_sum": {
+    "dtype": "float64",
+    "description": "Reference ET Hargreaves (mm)",
+    "source": "NASA POWER",
+    "min": 860.14,
+    "max": 1116.21,
+    "null_count": 0
+  },
+  "eto_8day_mean": {
+    "dtype": "float64",
+    "description": "Reference ET Hargreaves (mm)",
+    "source": "NASA POWER",
+    "min": 18.6987,
+    "max": 24.2654,
+    "null_count": 0
+  },
+  "etc_8day_sum": {
+    "dtype": "float64",
+    "description": "Crop ET = Kc*ETo (mm)",
+    "source": "FAO-56",
+    "min": 707.809,
+    "max": 1140.413,
+    "null_count": 0
+  },
+  "water_deficit_sum": {
+    "dtype": "float64",
+    "description": "ETc - effective rainfall (mm)",
+    "source": "FAO-56",
+    "min": 402.948,
+    "max": 891.311,
+    "null_count": 0
+  },
+  "water_deficit_mean": {
+    "dtype": "float64",
+    "description": "ETc - effective rainfall (mm)",
+    "source": "FAO-56",
+    "min": 8.7597,
+    "max": 19.3763,
+    "null_count": 0
+  },
+  "water_deficit_max": {
+    "dtype": "float64",
+    "description": "ETc - effective rainfall (mm)",
+    "source": "FAO-56",
+    "min": 28.6715,
+    "max": 47.7965,
+    "null_count": 0
+  },
+  "advisory_0_frac": {
+    "dtype": "float64",
+    "description": "Irrigation advisory class fraction",
+    "source": "FAO-56",
+    "min": 0.1304,
+    "max": 0.5435,
+    "null_count": 0
+  },
+  "advisory_1_frac": {
+    "dtype": "float64",
+    "description": "Irrigation advisory class fraction",
+    "source": "FAO-56",
+    "min": 0.0435,
+    "max": 0.3913,
+    "null_count": 0
+  },
+  "advisory_2_frac": {
+    "dtype": "float64",
+    "description": "Irrigation advisory class fraction",
+    "source": "FAO-56",
+    "min": 0.1304,
+    "max": 0.5652,
+    "null_count": 0
+  },
+  "advisory_3_frac": {
+    "dtype": "float64",
+    "description": "Irrigation advisory class fraction",
+    "source": "FAO-56",
+    "min": 0.0,
+    "max": 0.2174,
+    "null_count": 0
+  },
+  "ndvi_peak_day": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 8.0,
+    "max": 200.0,
+    "null_count": 0
+  },
+  "ndvi_amplitude": {
+    "dtype": "float64",
+    "description": "Normalized Difference Vegetation Index stat",
+    "source": "Sentinel-2 (simulated)",
+    "min": 0.3169,
+    "max": 0.5087,
+    "null_count": 0
+  },
+  "green_up_rate": {
+    "dtype": "float64",
+    "description": "Mean daily NDVI increase rate",
+    "source": "Phenology (derived)",
+    "min": 0.0121,
+    "max": 0.0287,
+    "null_count": 0
+  },
+  "senescence_rate": {
+    "dtype": "float64",
+    "description": "Mean daily NDVI decrease rate",
+    "source": "Phenology (derived)",
+    "min": 0.0151,
+    "max": 0.0288,
+    "null_count": 0
+  },
+  "season_length": {
+    "dtype": "float64",
+    "description": "Growing season length (days NDVI>0.3)",
+    "source": "Phenology (derived)",
+    "min": 40.0,
+    "max": 336.0,
+    "null_count": 0
+  },
+  "stress_flag": {
+    "dtype": "float64",
+    "description": "Binary stress flag",
+    "source": "Simulator ground truth",
+    "min": 0.0,
+    "max": 1.0,
+    "null_count": 0
+  },
+  "stress_intensity": {
+    "dtype": "float64",
+    "description": "Stress intensity [0-1]",
+    "source": "Simulator ground truth",
+    "min": 0.0,
+    "max": 0.4455,
+    "null_count": 0
+  },
+  "clay_pct": {
+    "dtype": "float64",
+    "description": "Clay content (%)",
+    "source": "SoilGrids 250m",
+    "min": 28.9,
+    "max": 63.9,
+    "null_count": 0
+  },
+  "sand_pct": {
+    "dtype": "float64",
+    "description": "Sand content (%)",
+    "source": "SoilGrids 250m",
+    "min": 6.3,
+    "max": 34.3,
+    "null_count": 0
+  },
+  "silt_pct": {
+    "dtype": "float64",
+    "description": "Silt content (%)",
+    "source": "SoilGrids 250m",
+    "min": 21.1,
+    "max": 48.3,
+    "null_count": 0
+  },
+  "awc_mm_m": {
+    "dtype": "float64",
+    "description": "Available Water Capacity (mm/m)",
+    "source": "SoilGrids 250m",
+    "min": 101.1,
+    "max": 262.4,
+    "null_count": 0
+  },
+  "bulk_density": {
+    "dtype": "float64",
+    "description": "Bulk density (g/cm3)",
+    "source": "SoilGrids 250m",
+    "min": 1.07,
+    "max": 1.585,
+    "null_count": 0
+  },
+  "soc_g_kg": {
+    "dtype": "float64",
+    "description": "Soil Organic Carbon (g/kg)",
+    "source": "SoilGrids 250m",
+    "min": 1.0,
+    "max": 21.28,
+    "null_count": 0
+  },
+  "ph_water": {
+    "dtype": "float64",
+    "description": "Soil pH (H2O)",
+    "source": "SoilGrids 250m",
+    "min": 6.76,
+    "max": 9.0,
+    "null_count": 0
+  },
+  "cec_cmol_kg": {
+    "dtype": "float64",
+    "description": "Cation Exchange Capacity (cmol/kg)",
+    "source": "SoilGrids 250m",
+    "min": 10.0,
+    "max": 57.8,
+    "null_count": 0
+  },
+  "nitrogen_g_kg": {
+    "dtype": "float64",
+    "description": "Nitrogen (g/kg)",
+    "source": "SoilGrids 250m",
+    "min": 0.3,
+    "max": 2.16,
+    "null_count": 0
+  },
+  "elevation_m": {
+    "dtype": "float64",
+    "description": "Elevation (m)",
+    "source": "SRTM 30m DEM",
+    "min": 321.9,
+    "max": 772.6,
+    "null_count": 0
+  },
+  "slope_deg": {
+    "dtype": "float64",
+    "description": "Slope (degrees)",
+    "source": "SRTM 30m DEM",
+    "min": 0.0,
+    "max": 14.88,
+    "null_count": 0
+  },
+  "aspect_deg": {
+    "dtype": "float64",
+    "description": "Aspect (degrees from N)",
+    "source": "SRTM 30m DEM",
+    "min": 0.9,
+    "max": 360.0,
+    "null_count": 0
+  },
+  "twi": {
+    "dtype": "float64",
+    "description": "Topographic Wetness Index",
+    "source": "SRTM 30m DEM",
+    "min": 7.56,
+    "max": 13.08,
+    "null_count": 0
+  }
+}

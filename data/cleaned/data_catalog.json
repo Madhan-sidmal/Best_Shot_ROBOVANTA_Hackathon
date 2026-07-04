@@ -1,0 +1,50 @@
+{
+  "project": "KrishiDrishti",
+  "aoi": {
+    "lon_min": 74.5,
+    "lon_max": 76.0,
+    "lat_min": 15.0,
+    "lat_max": 16.5
+  },
+  "aoi_name": "North Karnataka Agricultural Belt",
+  "crs": "EPSG:4326",
+  "time_range": "2023-2024",
+  "datasets": {
+    "ground_truth": {
+      "path": "ground_truth_cleaned.csv",
+      "samples": 400,
+      "classes": 12,
+      "seasons": [
+        "Kharif_2023",
+        "Rabi_2023"
+      ]
+    },
+    "weather": {
+      "daily": "weather_daily.csv",
+      "8day": "weather_8day_composites.csv",
+      "aoi_avg": "weather_aoi_average.csv",
+      "source": "NASA POWER",
+      "parameters": [
+        "T2M",
+        "T_max",
+        "T_min",
+        "RH2M",
+        "WS2M",
+        "Rs",
+        "precipitation",
+        "ETo_hargreaves"
+      ]
+    },
+    "rainfall": {
+      "path": "rainfall_at_gt_points.csv",
+      "source": "NASA POWER (proxy for CHIRPS)"
+    },
+    "soil": {
+      "path": "soil_features.csv",
+      "source": "SoilGrids 250m / Regional estimates"
+    },
+    "boundary": {
+      "aoi": "aoi_boundary.geojson"
+    }
+  }
+}

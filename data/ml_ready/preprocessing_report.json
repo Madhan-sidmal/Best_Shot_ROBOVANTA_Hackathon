@@ -1,0 +1,119 @@
+{
+  "project": "KrishiDrishti",
+  "generated_at": "2026-07-04T22:08:19.528146",
+  "aoi": {
+    "lon_min": 74.5,
+    "lon_max": 76.0,
+    "lat_min": 15.0,
+    "lat_max": 16.5
+  },
+  "crs": "EPSG:4326",
+  "input_datasets": {
+    "Sentinel-2": "Simulated via double-logistic crop model (46 timesteps x 6 VI)",
+    "Sentinel-1": "Simulated C-band SAR backscatter (46 timesteps x 4 features)",
+    "CHIRPS": "NASA POWER precipitation proxy (8-day totals)",
+    "NASA_POWER": "95 JSON files, 49 grid points, 2023-2024 daily",
+    "SoilGrids": "11 properties, 250m, regional values for N. Karnataka",
+    "SRTM_DEM": "30m elevation -> slope, aspect, TWI",
+    "WorldCover": "ESA 10m land cover (cropland filtering)",
+    "GADM": "Admin boundaries L0-L3 India",
+    "GroundTruth": "400 samples, 15 classes"
+  },
+  "cleaning_steps": [
+    "Removed duplicates by (lat, lon, crop, season)",
+    "Filtered confidence >= 0.70",
+    "Clipped to AOI bounding box",
+    "Reprojected/verified EPSG:4326",
+    "Filled all NaN with column median (numeric) or 'unknown' (string)"
+  ],
+  "master_table": {
+    "file": "master_features.parquet",
+    "shape": [
+      400,
+      80
+    ],
+    "samples": 400,
+    "features": 72,
+    "null_values": 0
+  },
+  "timeseries_table": {
+    "file": "timeseries_features.parquet",
+    "shape": [
+      18400,
+      53
+    ],
+    "samples": 400,
+    "timesteps_per_sample": 46,
+    "null_values": 0
+  },
+  "feature_groups": {
+    "vegetation_indices": [
+      "ndvi",
+      "evi",
+      "savi",
+      "ndwi",
+      "ndmi",
+      "lswi"
+    ],
+    "sar_indices": [
+      "vv_db",
+      "vh_db",
+      "vh_vv_ratio",
+      "rvi"
+    ],
+    "stress_indices": [
+      "vci",
+      "ndwi_anomaly",
+      "sar_moisture_proxy",
+      "csi"
+    ],
+    "weather": [
+      "temp_mean",
+      "temp_max",
+      "temp_min",
+      "rh_mean",
+      "wind_mean",
+      "solar_rad",
+      "precip_8day",
+      "eto_8day"
+    ],
+    "water_balance": [
+      "etc_8day",
+      "water_deficit",
+      "advisory_class"
+    ],
+    "soil": [
+      "clay_pct",
+      "sand_pct",
+      "silt_pct",
+      "awc_mm_m",
+      "bulk_density",
+      "soc_g_kg",
+      "ph_water"
+    ],
+    "terrain": [
+      "elevation_m",
+      "slope_deg",
+      "aspect_deg",
+      "twi"
+    ],
+    "phenology": [
+      "ndvi_peak_day",
+      "ndvi_amplitude",
+      "green_up_rate",
+      "senescence_rate",
+      "season_length"
+    ]
+  },
+  "target_variables": {
+    "crop_label": "15 classes (crop classification)",
+    "growth_stage": "5 stages (phenology estimation)",
+    "stress_flag": "binary (stress detection)",
+    "advisory_class": "4 levels (irrigation advisory)"
+  },
+  "output_formats": [
+    "Parquet",
+    "CSV",
+    "Feather"
+  ]
+}
