@@ -36,11 +36,15 @@ DATASETS.zip
 
 # Model checkpoints
 models/saved/
+models/production/
 *.joblib
 *.pkl
 *.h5
 *.pt
 *.pth
+
+# CatBoost cache
+catboost_info/
 
 # Outputs (regeneratable)
 outputs/
