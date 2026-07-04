@@ -915,14 +915,14 @@ def train_crop_classification(X_train, X_test, y_train, y_test,
                             'CatBoost — Feature Importance',
                             os.path.join(out_dir, 'fi_catboost.png'))
     # CatBoost SHAP
-    try:
-        shap_vals_cb = cb_model.get_feature_importance(type='ShapValues',
-                                                        data=cb_model.get_feature_importance.__func__ and None)
-    except Exception:
-        pass
-    compute_shap_values(cb_model, X_test, feature_cols,
-                        'SHAP — CatBoost',
-                        os.path.join(out_dir, 'shap_catboost.png'))
+    # try:
+    #     shap_vals_cb = cb_model.get_feature_importance(type='ShapValues',
+    #                                                     data=cb_model.get_feature_importance.__func__ and None)
+    # except Exception:
+    #     pass
+    # compute_shap_values(cb_model, X_test, feature_cols,
+    #                     'SHAP — CatBoost',
+    #                     os.path.join(out_dir, 'shap_catboost.png'))
 
     joblib.dump({'model': cb_model, 'scaler': scaler, 'le': le,
                  'features': feature_cols, 'metrics': cb_metrics},
@@ -1454,9 +1454,15 @@ def train_water_deficit(X_train, X_test, y_train, y_test, feature_cols, scaler):
     plot_feature_importance(cb_fi, feature_cols,
                             'CatBoost — Feature Importance (Water Deficit)',
                             os.path.join(out_dir, 'fi_catboost.png'))
-    compute_shap_values(cb_model, X_test, feature_cols,
-                        'SHAP — CatBoost (Water Deficit)',
-                        os.path.join(out_dir, 'shap_catboost.png'))
+    # CatBoost SHAP
+    # try:
+    #     shap_vals_cb = cb_model.get_feature_importance(type='ShapValues',
+    #                                                     data=cb_model.get_feature_importance.__func__ and None)
+    # except Exception:
+    #     pass
+    # compute_shap_values(cb_model, X_test, feature_cols,
+    #                     'SHAP — CatBoost (Water Deficit)',
+    #                     os.path.join(out_dir, 'shap_catboost.png'))
 
     joblib.dump({'model': cb_model, 'scaler': scaler, 'features': feature_cols,
                  'metrics': cb_metrics},
