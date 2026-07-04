@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (large)
+data/rasters/
+data/ground_truth/*.tif
+data/ancillary/*.tif
+*.tif
+*.tiff
+
+# Model checkpoints
+models/saved/
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.pth
+
+# Outputs (regeneratable)
+outputs/
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
