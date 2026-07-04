@@ -95,6 +95,7 @@ Provide your response in valid JSON format ONLY with the following exact structu
 {{
   "advisory_en": "A 2-sentence empathetic summary in English explaining why this water deficit matters at the {stage} stage and what to do.",
   "advisory_hi": "The exact same summary translated into natural, professional Hindi (Devanagari script) suitable for Indian farmers.",
+  "advisory_ta": "The exact same summary translated into natural, professional Tamil (தமிழ்) suitable for Indian farmers in Tamil Nadu.",
   "bullet_points_en": [
     "Actionable bullet 1 (e.g. exact irrigation amount recommended)",
     "Actionable bullet 2 (e.g. fertilizer/potassium recommendation to withstand stress)",
@@ -104,6 +105,11 @@ Provide your response in valid JSON format ONLY with the following exact structu
     "Actionable bullet 1 in Hindi",
     "Actionable bullet 2 in Hindi",
     "Actionable bullet 3 in Hindi"
+  ],
+  "bullet_points_ta": [
+    "Actionable bullet 1 in Tamil",
+    "Actionable bullet 2 in Tamil",
+    "Actionable bullet 3 in Tamil"
   ]
 }}
 Do NOT include any markdown code blocks, backticks, or extra text outside the JSON object.
@@ -127,8 +133,10 @@ Do NOT include any markdown code blocks, backticks, or extra text outside the JS
             "source": f"Google Gemini Free API ({self.model_name})",
             "advisory_en": data.get("advisory_en", ""),
             "advisory_hi": data.get("advisory_hi", ""),
+            "advisory_ta": data.get("advisory_ta", ""),
             "bullet_points_en": data.get("bullet_points_en", []),
             "bullet_points_hi": data.get("bullet_points_hi", []),
+            "bullet_points_ta": data.get("bullet_points_ta", []),
             "raw_metrics": {"crop": crop, "stage": stage, "deficit_mm": deficit}
         }
 
@@ -143,6 +151,8 @@ Do NOT include any markdown code blocks, backticks, or extra text outside the JS
                       f"Immediate irrigation is required to prevent canopy wilting and up to 25-30% yield loss.")
             adv_hi = (f"चेतावनी: {stage} अवस्था में {crop} को {deficit:.1f} मिमी पानी की भारी कमी का सामना करना पड़ रहा है। "
                       f"फसल सूखने और 25-30% उपज के नुकसान से बचने के लिए तुरंत सिंचाई करें।")
+            adv_ta = (f"எச்சரிக்கை: {stage} பருவத்தில் உள்ள {crop} பயிருக்கு {deficit:.1f} மிமீ தண்ணீர் பற்றாக்குறை உள்ளது. "
+                      f"பயிர் வாடுவதையும் 25-30% மகசூல் இழப்பையும் தடுக்க உடனடியாக நீர் பாய்ச்சவும்.")
             bullets_en = [
                 f"Apply at least {max(25.0, deficit * 1.2):.0f} mm of irrigation water immediately within the next 48 hours.",
                 f"Foliar spray of 1% Potassium Nitrate (KNO3) is recommended to improve drought tolerance and stomatal regulation.",
@@ -153,11 +163,18 @@ Do NOT include any markdown code blocks, backticks, or extra text outside the JS
                 f"सूखा सहनशीलता और पत्तियों के बचाव के लिए 1% पोटेशियम नाइट्रेट (KNO3) का छिड़काव करें।",
                 f"नहर से पानी की प्राथमिकता के लिए स्थानीय जल उपभोक्ता संघ (WUA) से संपर्क करें।"
             ]
+            bullets_ta = [
+                f"அடுத்த 48 மணி நேரத்திற்குள் குறைந்தது {max(25.0, deficit * 1.2):.0f} மிமீ அளவு பாசன நீரை உடனடியாக பாய்ச்சவும்.",
+                f"வறட்சியைத் தாங்க 1% பொட்டாசியம் நைட்ரேட் (KNO3) தெளிக்க பரிந்துரைக்கப்படுகிறது.",
+                f"கால்வாய் நீர் பங்கீட்டிற்கு உள்ளூர் நீர் பயன்படுத்துவோர் சங்கத்தை (WUA) அணுகவும்."
+            ]
         elif is_watch:
             adv_en = (f"WATCH ADVISORY: {crop} at {stage} stage has a mild deficit of {deficit:.1f} mm. "
                       f"Soil moisture is depleting; schedule irrigation during the next canal turn.")
             adv_hi = (f"सलाह: {stage} अवस्था में {crop} में {deficit:.1f} मिमी पानी की सामान्य कमी है। "
                       f"मिट्टी की नमी घट रही है; अगली नहर बारी में सिंचाई का कार्यक्रम बनाएं।")
+            adv_ta = (f"கவனிப்பு: {stage} பருவத்தில் உள்ள {crop} பயிருக்கு {deficit:.1f} மிமீ மிதமான தண்ணீர் பற்றாக்குறை உள்ளது. "
+                      f"மண் ஈரப்பதம் குறைந்து வருகிறது; அடுத்த முறை கால்வாய் நீர் வரும்போது பாசனத்திற்கு திட்டமிடவும்.")
             bullets_en = [
                 f"Plan irrigation of {max(15.0, deficit):.0f} mm within the next 5 to 7 days.",
                 f"Monitor soil moisture at root zone (15-30 cm depth) avoiding unnecessary flooding.",
@@ -168,11 +185,18 @@ Do NOT include any markdown code blocks, backticks, or extra text outside the JS
                 f"अनावश्यक जलभराव से बचते हुए जड़ क्षेत्र (15-30 सेमी गहराई) में मिट्टी की नमी की निगरानी करें।",
                 f"मिट्टी की नमी बनाए रखने के लिए खेत की मेड़ों को खरपतवार मुक्त रखें।"
             ]
+            bullets_ta = [
+                f"அடுத்த 5 முதல் 7 நாட்களுக்குள் {max(15.0, deficit):.0f} மிமீ பாசனத்திற்கு திட்டமிடவும்.",
+                f"அதிகப்படியான நீரைத் தவிர்த்து வேர்ப்பகுதியில் (15-30 செ.மீ) ஈரப்பதத்தை கண்காணிக்கவும்.",
+                f"மண் ஈரப்பதத்தை காக்க வயல் வரப்புகளை களைகளின்றி பராமரிக்கவும்."
+            ]
         else:
             adv_en = (f"STATUS ADEQUATE: {crop} at {stage} stage has sufficient moisture (Deficit: {deficit:.1f} mm). "
                       f"No immediate irrigation is required. Crop evapotranspiration is well balanced.")
             adv_hi = (f"स्थिति संतोषजनक: {stage} अवस्था में {crop} के पास पर्याप्त नमी है (कमी: {deficit:.1f} मिमी)। "
                       f"तत्काल सिंचाई की आवश्यकता नहीं है। फसल का वाष्पोत्सर्जन संतुलित है।")
+            adv_ta = (f"போதுமான நிலை: {stage} பருவத்தில் உள்ள {crop} பயிருக்கு போதுமான ஈரப்பதம் உள்ளது (பற்றாக்குறை: {deficit:.1f} மிமீ). "
+                      f"உடனடி பாசனம் தேவையில்லை. பயிர் நீராவிப்போக்கு சீராக உள்ளது.")
             bullets_en = [
                 "No irrigation needed for the current 8-day period; conserve canal quota.",
                 f"Continue routine pest and disease scouting appropriate for the {stage} stage.",
@@ -183,14 +207,21 @@ Do NOT include any markdown code blocks, backticks, or extra text outside the JS
                 f"{stage} अवस्था के अनुकूल नियमित कीट और रोग की निगरानी जारी रखें।",
                 "बारिश होने पर जलभराव से बचने के लिए जल निकासी की जांच करें।"
             ]
+            bullets_ta = [
+                "இந்த 8-நாள் காலத்திற்கு பாசனம் தேவையில்லை; கால்வாய் நீரை சேமிக்கவும்.",
+                f"{stage} பருவத்திற்கு ஏற்ற வழக்கமான பூச்சி மற்றும் நோய் கண்காணிப்பை தொடரவும்.",
+                "மழை பெய்தால் தண்ணீர் தேங்குவதைத் தவிர்க்க வடிகால் வசதிகளை சரிபார்க்கவும்."
+            ]
             
         return {
             "status": "success",
             "source": "Offline Agronomy Rules Engine (100% Demo-Safe Fallback)",
             "advisory_en": adv_en,
             "advisory_hi": adv_hi,
+            "advisory_ta": adv_ta,
             "bullet_points_en": bullets_en,
             "bullet_points_hi": bullets_hi,
+            "bullet_points_ta": bullets_ta,
             "raw_metrics": {"crop": crop, "stage": stage, "deficit_mm": deficit}
         }
 
@@ -216,10 +247,14 @@ if __name__ == "__main__":
     print(f"\nSource: {result['source']}")
     print(f"\n[English Advisory]:\n{result['advisory_en']}")
     print(f"\n[Hindi Advisory]:\n{result['advisory_hi']}")
+    print(f"\n[Tamil Advisory]:\n{result['advisory_ta']}")
     print(f"\n[Actionable Bullets - EN]:")
     for b in result['bullet_points_en']:
         print(f"  • {b}")
     print(f"\n[Actionable Bullets - HI]:")
     for b in result['bullet_points_hi']:
+        print(f"  • {b}")
+    print(f"\n[Actionable Bullets - TA]:")
+    for b in result['bullet_points_ta']:
         print(f"  • {b}")
     print("='*60")
