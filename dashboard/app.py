@@ -4,6 +4,12 @@ KrishiDrishti Dashboard — Streamlit Application
 Interactive dashboard for crop classification, moisture stress
 visualization, and irrigation advisory display.
 
+Features:
+- AI Kisan Copilot (Google Gemini Free API + Offline Fallback)
+- Open-Source GIS Layers (GeoPandas / Folium / GeoJSON export)
+- Multi-Channel Alert Dispatch (Ntfy.sh Live Push + Apprise + Mock SMS)
+- 100% Demo-Safe Synthetic Backend
+
 Run: streamlit run dashboard/app.py
 """
 
@@ -13,15 +19,24 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import folium
-from streamlit_folium import st_folium
 import json
 import os
 import sys
 
 # Add project root to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils.config import DASHBOARD, CROP_CLASSES, STRESS_THRESHOLDS, IRRIGATION_ADVISORY
+from utils.config import DASHBOARD, CROP_PARAMS, ADVISORY_CONFIG
+from utils.gemini_copilot import GeminiKisanCopilot
+from utils.geo_utils import GeoFieldManager
+from utils.alert_service import KrishiAlertManager
+
+# Optional folium import for Streamlit
+try:
+    import folium
+    from streamlit_folium import st_folium
+    FOLIUM_AVAILABLE = True
+except ImportError:
+    FOLIUM_AVAILABLE = False
 
 # ============================================================
 # PAGE CONFIG
@@ -115,7 +130,7 @@ st.markdown("""
 
 
 # ============================================================
-# GENERATE DEMO DATA
+# GENERATE DEMO DATA (SYNTHETIC BACKEND PRESERVED)
 # ============================================================
 @st.cache_data
 def generate_demo_data():
@@ -200,11 +215,15 @@ def render_sidebar():
         st.markdown("**AI Crop Intelligence Platform**")
         st.markdown("---")
         
-        # Study area selector
-        st.markdown("#### 📍 Study Area")
+        # Study area selector (Enhanced with realistic Indian Canal Commands)
+        st.markdown("#### 📍 Study Area (AOI)")
         study_area = st.selectbox(
             "Canal Command Area",
-            ["Pilot Area — Canal Command", "Extended Region", "Full District"],
+            [
+                "Indira Gandhi Canal Command",
+                "Godavari Delta Command Area",
+                "Bhakra Nangal Command Area"
+            ],
             index=0
         )
         
@@ -238,7 +257,7 @@ def render_sidebar():
         st.metric("F1 Score (Macro)", "0.85", "+0.03")
         
         st.markdown("---")
-        st.markdown("#### 📥 Export")
+        st.markdown("#### 📥 Quick Export")
         col1, col2 = st.columns(2)
         with col1:
             st.button("📄 PDF Report", use_container_width=True)
@@ -246,7 +265,7 @@ def render_sidebar():
             st.button("🗺️ GeoTIFF", use_container_width=True)
         
         st.markdown("---")
-        st.caption("Team BEST SHOT")
+        st.caption("Team BEST SHOT | PS 06")
     
     return {
         'study_area': study_area,
@@ -260,16 +279,19 @@ def render_sidebar():
 
 
 # ============================================================
-# HEADER
+# HEADER & DISCLOSURE BANNER
 # ============================================================
 def render_header():
-    """Render the main header."""
+    """Render the main header and mandatory simulated-data disclosure banner."""
     st.markdown("""
     <div class="main-header">
         <h1>🛰️ KrishiDrishti — AI Crop Intelligence Dashboard</h1>
         <p>PS 06 — AI-Driven Crop Type, Moisture Stress & Irrigation Advisory</p>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Mandatory Disclosure Banner
+    st.warning(DASHBOARD.get("disclosure_banner", "⚠️ ALL DATA IS SYNTHETICALLY GENERATED FOR DEMONSTRATION PURPOSES."))
 
 
 # ============================================================
@@ -289,7 +311,7 @@ def render_metrics(crops, stress_data, advisory_data):
         ("📊", "87.3%", "Classification OA"),
         ("💧", f"{stressed_pct}%", "Under Stress"),
         ("🚿", f"{irrigation_needed}%", "Irrigation Needed"),
-        ("🛰️", "NISAR Ready", "Architecture"),
+        ("🤖", "Gemini Copilot", "AI Advisory Ready"),
     ]
     
     for col, (emoji, value, label) in zip(cols, metrics):
@@ -304,78 +326,20 @@ def render_metrics(crops, stress_data, advisory_data):
 
 
 # ============================================================
-# MAP VISUALIZATION
+# MAP VISUALIZATION (ENHANCED WITH GEOUTILS)
 # ============================================================
-def render_map(controls):
-    """Render the interactive Folium map."""
-    # Create base map
-    m = folium.Map(
-        location=DASHBOARD['map_center'],
-        zoom_start=DASHBOARD['map_zoom'],
-        tiles='CartoDB dark_matter'
-    )
+def render_map(controls, advisory_table):
+    """Render the interactive Folium map or fallback Streamlit map."""
+    geo_mgr = GeoFieldManager(aoi_name=controls['study_area'])
+    gdf = geo_mgr.generate_field_polygons(advisory_table)
     
-    # Add layer control
-    folium.TileLayer('OpenStreetMap', name='OpenStreetMap').add_to(m)
-    folium.TileLayer('Stamen Terrain', name='Terrain').add_to(m)
-    
-    # Canal command area boundary (demo polygon)
-    canal_boundary = [
-        [17.1, 78.1], [17.1, 78.4], [17.4, 78.4], [17.4, 78.1], [17.1, 78.1]
-    ]
-    
-    if controls.get('show_canal', True):
-        folium.Polygon(
-            locations=canal_boundary,
-            color='#00CED1',
-            weight=3,
-            fill=True,
-            fill_opacity=0.05,
-            popup='Canal Command Area Boundary',
-            tooltip='Pilot Canal Command Area'
-        ).add_to(m)
-    
-    # Demo markers for fields
-    np.random.seed(42)
-    n_markers = 25
-    lats = np.random.uniform(17.15, 17.35, n_markers)
-    lons = np.random.uniform(78.15, 78.35, n_markers)
-    crops_list = ['Rice', 'Cotton', 'Maize', 'Soybean', 'Sugarcane']
-    statuses = ['🟢 Adequate', '🟡 Watch', '🟠 Urgent', '🔴 Critical']
-    status_colors = ['green', 'orange', 'orange', 'red']
-    
-    for i in range(n_markers):
-        crop = np.random.choice(crops_list)
-        status_idx = np.random.choice([0, 0, 0, 1, 1, 2, 3])
-        status = statuses[status_idx]
-        color = status_colors[status_idx]
-        
-        popup_html = f"""
-        <div style='font-family: Arial; width: 200px;'>
-            <b>Field F-{i:03d}</b><br>
-            <b>Crop:</b> {crop}<br>
-            <b>Stage:</b> Reproductive<br>
-            <b>VCI:</b> {np.random.uniform(0.2, 0.8):.2f}<br>
-            <b>Deficit:</b> {np.random.uniform(0, 35):.1f} mm<br>
-            <b>Status:</b> {status}<br>
-        </div>
-        """
-        
-        folium.CircleMarker(
-            location=[lats[i], lons[i]],
-            radius=8,
-            color=color,
-            fill=True,
-            fill_color=color,
-            fill_opacity=0.7,
-            popup=folium.Popup(popup_html, max_width=250),
-            tooltip=f"Field F-{i:03d}: {crop} — {status}"
-        ).add_to(m)
-    
-    # Layer control
-    folium.LayerControl().add_to(m)
-    
-    return m
+    if FOLIUM_AVAILABLE:
+        m = geo_mgr.create_interactive_map(gdf, layer_type="advisory")
+        if m is not None:
+            return m, gdf
+            
+    # Fallback if Folium not available
+    return None, gdf
 
 
 # ============================================================
@@ -552,9 +516,13 @@ def main():
         col1, col2 = st.columns([2, 1])
         
         with col1:
-            st.markdown("### 🗺️ Interactive Map")
-            m = render_map(controls)
-            st_folium(m, width=None, height=550)
+            st.markdown(f"### 🗺️ Interactive GIS Map — {controls['study_area']}")
+            m, gdf = render_map(controls, advisory_table)
+            if FOLIUM_AVAILABLE and m is not None:
+                st_folium(m, width=None, height=550)
+            else:
+                st.info("ℹ️ Displaying standard coordinate map (Folium library offline or disabled):")
+                st.map(gdf, latitude='latitude', longitude='longitude', zoom=12, use_container_width=True)
         
         with col2:
             st.markdown("### 📊 Quick Stats")
@@ -572,15 +540,6 @@ def main():
         )
         
         st.markdown("### 📊 Phenological Growth Stage")
-        stages = ['Pre-season', 'Germination', 'Vegetative', 'Vegetative',
-                   'Reproductive', 'Reproductive', 'Reproductive', 'Maturity']
-        
-        # Growth stage timeline
-        stage_colors = {
-            'Pre-season': '#808080', 'Germination': '#FFF9C4',
-            'Vegetative': '#C8E6C9', 'Reproductive': '#BBDEFB',
-            'Maturity': '#FFE0B2'
-        }
         
         col1, col2, col3, col4 = st.columns(4)
         with col1:
@@ -605,7 +564,6 @@ def main():
         with col2:
             st.markdown("#### Classification Performance")
             
-            # Simulated confusion matrix data
             cm_data = np.array([
                 [45, 2, 1, 0, 1],
                 [1, 38, 2, 1, 0],
@@ -629,7 +587,6 @@ def main():
             )
             st.plotly_chart(fig, use_container_width=True)
         
-        # Per-class metrics
         st.markdown("#### Per-Class Accuracy Metrics")
         metrics_df = pd.DataFrame({
             'Crop': ['Rice', 'Cotton', 'Maize', 'Soybean', 'Sugarcane'],
@@ -640,7 +597,7 @@ def main():
         })
         st.dataframe(metrics_df, use_container_width=True, hide_index=True)
     
-    # TAB 4: STRESS & ADVISORY
+    # TAB 4: STRESS & ADVISORY (ENHANCED WITH GEMINI COPILOT)
     with tab4:
         col1, col2 = st.columns(2)
         
@@ -654,7 +611,6 @@ def main():
         
         st.markdown("### 📋 Pixel-Level Irrigation Advisory Table")
         
-        # Filter controls
         col1, col2, col3 = st.columns(3)
         with col1:
             crop_filter = st.multiselect("Filter by Crop", options=advisory_table['Crop'].unique())
@@ -663,7 +619,6 @@ def main():
         with col3:
             status_filter = st.multiselect("Filter by Status", options=advisory_table['Status'].unique())
         
-        # Apply filters
         filtered = advisory_table.copy()
         if crop_filter:
             filtered = filtered[filtered['Crop'].isin(crop_filter)]
@@ -675,19 +630,87 @@ def main():
         st.dataframe(
             filtered.style.background_gradient(subset=['Deficit (mm)'], cmap='YlOrRd'),
             use_container_width=True,
-            height=400,
+            height=350,
             hide_index=True
         )
+        
+        # --- AI KISAN COPILOT SECTION ---
+        st.markdown("---")
+        st.markdown("### 🤖 Ask AI Kisan Copilot (Generative Agronomy Advisor)")
+        st.caption("Powered by Google Gemini Free API (with 100% Demo-Safe Rule-Based Fallback)")
+        
+        field_ids = filtered['Field_ID'].tolist() if len(filtered) > 0 else advisory_table['Field_ID'].tolist()
+        col_sel, col_btn = st.columns([3, 1])
+        with col_sel:
+            selected_field = st.selectbox("Select Field for Deep AI Advisory Analysis:", options=field_ids)
+        with col_btn:
+            st.markdown("<br>", unsafe_allow_html=True)
+            gen_btn = st.button("✨ Generate AI Advisory", type="primary", use_container_width=True)
+            
+        if gen_btn or selected_field:
+            row_data = advisory_table[advisory_table['Field_ID'] == selected_field].iloc[0]
+            plot_dict = {
+                "plot_id": selected_field,
+                "crop": row_data["Crop"],
+                "stage": row_data["Stage"],
+                "deficit_mm": row_data["Deficit (mm)"],
+                "status": row_data["Status"],
+                "eto_sum": row_data["ETc (mm/8d)"]
+            }
+            
+            copilot = GeminiKisanCopilot()
+            with st.spinner("Analyzing water balance, phenology stage, and canopy stress..."):
+                res = copilot.generate_advisory(plot_dict)
+                
+            st.success(f"✅ Advisory Generated Successfully | **Source:** {res['source']}")
+            
+            t_en, t_hi, t_plan = st.tabs(["🇬🇧 English Advisory", "🇮🇳 Hindi Advisory (हिंदी सलाह)", "📋 Actionable Plan"])
+            with t_en:
+                st.info(f"**Agronomist Assessment:**\n\n{res['advisory_en']}")
+                st.markdown("#### Recommended Actions:")
+                for b in res["bullet_points_en"]:
+                    st.write(f"• **{b}**")
+            with t_hi:
+                st.success(f"**कृषि विशेषज्ञ सलाह:**\n\n{res['advisory_hi']}")
+                st.markdown("#### आवश्यक कदम:")
+                for b in res["bullet_points_hi"]:
+                    st.write(f"• **{b}**")
+            with t_plan:
+                st.markdown(f"#### Immediate Next Steps for Field `{selected_field}` ({row_data['Crop']}):")
+                st.write("1. **Water Roster Priority:** Coordinate with local Water User Association (WUA) for canal release.")
+                st.write("2. **Nutrient Management:** Spray 1% KNO3 if leaf rolling or stomatal closure is observed.")
+                st.write("3. **Ground Verification:** Inspect root zone soil moisture at 15–30 cm depth.")
     
-    # TAB 5: ALERTS & EXPORT
+    # TAB 5: ALERTS & EXPORT (ENHANCED WITH NTFY & GEOUTILS)
     with tab5:
         col1, col2 = st.columns(2)
         
         with col1:
-            st.markdown("### 📱 SMS/WhatsApp Alert Preview")
-            st.markdown("---")
+            st.markdown("### 🚨 Live Push Notifications (Ntfy.sh)")
+            st.caption("100% Open-Source, Zero-Cost Push Alerts — No API keys or SMS gateway fees required!")
             
-            # Sample alerts
+            ntfy_topic = st.text_input("Ntfy Topic Name:", value="krishidrishti_demo")
+            st.markdown(f"👉 **Live Demo Tip:** *Open [ntfy.sh/{ntfy_topic}](https://ntfy.sh/{ntfy_topic}) on your mobile browser or Ntfy app right now to receive live push alerts!*")
+            
+            if st.button("🚨 Dispatch Live Irrigation Alerts", type="primary", use_container_width=True):
+                alert_mgr = KrishiAlertManager(ntfy_topic=ntfy_topic)
+                with st.spinner("Dispatching alerts across Ntfy Push, Apprise, and Mocked SMS/WhatsApp..."):
+                    sample_crit = {
+                        "plot_id": "F-042",
+                        "crop": "Rice (Paddy)",
+                        "stage": "Reproductive",
+                        "deficit_mm": 34.5,
+                        "status": "🔴 Critical"
+                    }
+                    rec = alert_mgr.dispatch_advisory_alert(sample_crit, recipient_phone="+91-9876543210")
+                    
+                st.success(f"✅ Alert Dispatched! (ID: `{rec['alert_id']}`)")
+                for res in rec["dispatch_results"]:
+                    status_icon = "✅" if res["status"] in ["success", "mock_delivered"] else "⚠️"
+                    st.write(f"• **{res['channel']}**: {status_icon} `{res['detail']}`")
+            
+            st.markdown("---")
+            st.markdown("### 📱 SMS/WhatsApp Alert Log Preview")
             alerts = [
                 {"emoji": "🔴", "crop": "Rice", "stage": "Reproductive", 
                  "deficit": 32.5, "status": "Critical",
@@ -695,39 +718,44 @@ def main():
                 {"emoji": "🟠", "crop": "Cotton", "stage": "Vegetative", 
                  "deficit": 22.1, "status": "Urgent",
                  "msg": "Irrigate within 1-2 days. Apply ~25mm water depth."},
-                {"emoji": "🟡", "crop": "Maize", "stage": "Maturity", 
-                 "deficit": 11.3, "status": "Watch",
-                 "msg": "Schedule irrigation within 3-5 days. Monitor closely."},
             ]
-            
             for alert in alerts:
                 st.markdown(f"""
                 <div style="background: rgba(255,255,255,0.05); border-radius: 10px; 
                             padding: 1rem; margin-bottom: 0.8rem; border-left: 4px solid 
-                            {'#FF0000' if alert['status']=='Critical' else '#FF8800' if alert['status']=='Urgent' else '#FFDD00'};">
+                            {'#FF0000' if alert['status']=='Critical' else '#FF8800'};">
                     <strong>{alert['emoji']} KrishiDrishti Alert</strong><br>
                     <strong>Crop:</strong> {alert['crop']} | <strong>Stage:</strong> {alert['stage']}<br>
                     <strong>Water Deficit:</strong> {alert['deficit']} mm/8-day<br>
-                    <strong>Status:</strong> {alert['status']}<br>
                     <em>{alert['msg']}</em>
                 </div>
                 """, unsafe_allow_html=True)
-            
-            st.button("📤 Send Test SMS Alert", type="primary", use_container_width=True)
         
         with col2:
-            st.markdown("### 📥 Export Options")
+            st.markdown("### 📥 Open-Source GIS Exports")
+            st.caption("Export field boundaries and attributes to industry-standard formats (GeoJSON / Shapefile).")
+            
+            if st.button("📦 Generate Spatial Field Boundaries (GeoJSON)", use_container_width=True):
+                geo_mgr = GeoFieldManager(aoi_name=controls['study_area'])
+                gdf = geo_mgr.generate_field_polygons(advisory_table)
+                paths = geo_mgr.export_spatial_data(gdf, output_dir="outputs/geospatial")
+                
+                if "geojson" in paths:
+                    with open(paths["geojson"], "r", encoding="utf-8") as f:
+                        geojson_str = f.read()
+                    st.download_button(
+                        label="⬇️ Download GeoJSON File",
+                        data=geojson_str,
+                        file_name=f"krishidrishti_fields_{controls['study_area'].lower().replace(' ', '_')}.geojson",
+                        mime="application/geo+json",
+                        use_container_width=True
+                    )
+                st.success("✅ Spatial GIS data generated in `outputs/geospatial/`")
+            
             st.markdown("---")
-            
-            st.markdown("#### 🗺️ Map Outputs")
-            st.button("Download Crop Map (GeoTIFF)", use_container_width=True)
-            st.button("Download Stress Map (GeoTIFF)", use_container_width=True)
-            st.button("Download Advisory Map (GeoTIFF)", use_container_width=True)
-            
-            st.markdown("#### 📊 Reports")
+            st.markdown("#### 📊 Standard Reports")
             st.button("Download Full Report (PDF)", use_container_width=True)
             st.button("Download Advisory Table (CSV)", use_container_width=True)
-            st.button("Download KML (Google Earth)", use_container_width=True)
             
             st.markdown("---")
             st.markdown("### 🏛️ Policy Alignment")
@@ -742,7 +770,7 @@ def main():
     <div style="text-align: center; color: #6c757d; font-size: 0.85rem;">
         🛰️ <strong>KrishiDrishti</strong> — AI Crop Intelligence Platform | 
         Team BEST SHOT | PS 06<br>
-        Powered by Sentinel-1/2, MODIS, NISAR | Google Earth Engine + Python + Streamlit
+        Powered by Sentinel-1/2, MODIS, NISAR | Google Earth Engine + Python + Streamlit + Gemini AI
     </div>
     """, unsafe_allow_html=True)
 
