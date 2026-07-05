@@ -1,0 +1,30 @@
+services:
+  # 1. Backend API Server (FastAPI)
+  - type: web
+    name: krishidrishti-backend
+    env: python
+    region: singapore # Optimal region for India/Asia
+    rootDir: app/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: MONGO_URL
+        value: "" # Optional: Add your MongoDB Atlas connection string here or in Render dashboard
+
+  # 2. Frontend Static Site (React SPA)
+  - type: web
+    name: krishidrishti-frontend
+    env: static
+    rootDir: app/frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    envVars:
+      - key: REACT_APP_BACKEND_URL
+        fromService:
+          name: krishidrishti-backend
+          type: web
+          property: url
