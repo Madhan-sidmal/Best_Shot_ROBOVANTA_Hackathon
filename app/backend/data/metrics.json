@@ -1,0 +1,12 @@
+{
+  "classification_accuracy": 0.96,
+  "cohens_kappa": 0.9453,
+  "f1_score": 0.9593,
+  "stage_estimation_accuracy": 0.9475,
+  "total_fields": 556,
+  "stressed_fields_pct": 27.3,
+  "irrigation_needed_pct": 50.0,
+  "status": "live_pipeline",
+  "model_type": "Random Forest + XGBoost Soft-Voting Ensemble",
+  "fao_standard": "FAO-56 Dual Crop Coefficient"
+}

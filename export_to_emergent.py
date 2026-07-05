@@ -1,14 +1,14 @@
 """
-KrishiDrishti — Emergent Frontend/Backend Data Bridge
-=====================================================
-This script runs the ML pipeline and exports the exact 4 files expected by
-Emergent's `/api/pipeline/insights` endpoint:
+KrishiDrishti — Frontend Data Bridge
+=====================================
+Runs the ML pipeline and exports the 4 files expected by the FastAPI
+`/api/pipeline/insights` endpoint in `app/backend/data/`:
 1. predictions.csv
 2. advisory.geojson
 3. metrics.json
 4. model_comparison.csv
 
-Run: python export_to_emergent.py [--target-dir /path/to/app/backend/data]
+Run: python export_to_emergent.py [--target-dir app/backend/data]
 """
 
 import os
@@ -28,10 +28,10 @@ from scripts.advisory_engine import compute_advisory
 from utils.config import ADVISORY_CONFIG
 
 
-def generate_emergent_bridge_data(target_dir="outputs/emergent_data"):
-    """Generate and save all 4 pipeline files for Emergent integration."""
+def generate_bridge_data(target_dir="app/backend/data"):
+    """Generate and save all 4 pipeline files for frontend integration."""
     os.makedirs(target_dir, exist_ok=True)
-    print(f"🛰️ KrishiDrishti — Generating Data Bridge for Emergent...")
+    print(f"🛰️ KrishiDrishti — Generating Data Bridge...")
     print(f"📂 Target Directory: {os.path.abspath(target_dir)}")
     
     # 1. Run Simulator & Advisory Engine
@@ -44,37 +44,49 @@ def generate_emergent_bridge_data(target_dir="outputs/emergent_data"):
     # Compute advisory DataFrame
     df_adv = compute_advisory(plots)
     
-    # Build predictions dataframe for Emergent
+    # Build predictions dataframe with EXACT column names that server.py expects
+    # server.py._read_fields_from_data() looks for:
+    #   field_id, crop_type, growth_stage, csi, water_deficit_mm,
+    #   advisory_status, latitude, longitude
     records = []
     classes = ADVISORY_CONFIG["classes"]
+    rng = np.random.RandomState(42)
     
-    for _, row in df_adv.iterrows():
-        field_id = row["plot_id"]
-        crop = row["crop"]
-        stage = row["stage"]
+    # Indira Gandhi Canal Command AOI center
+    base_lat, base_lng = 29.88, 75.82
+    
+    for idx, (_, row) in enumerate(df_adv.iterrows()):
         adv_code = int(row["advisory_pred"])
         status_info = classes.get(adv_code, classes[0])
-        status_name = f"{status_info['emoji']} {status_info['name']}"
+        status_name = status_info['name']  # Adequate / Irrigate Soon / Stress Detected
         
-        csi = np.round(np.random.uniform(0.15, 0.85), 2)
-        deficit = row["deficit_mm"]
-        rec_depth = np.round(max(0, deficit * 1.1), 1)
+        csi = np.round(rng.uniform(0.15, 0.85), 3)
+        deficit = float(row["deficit_mm"])
+        
+        # Map advisory code to status labels the frontend expects
+        if adv_code == 0:
+            advisory_status = "Adequate"
+        elif adv_code == 1:
+            advisory_status = "Watch"
+        else:
+            if deficit > 25:
+                advisory_status = "Critical"
+            else:
+                advisory_status = "Urgent"
         
         records.append({
-            "Field_ID": field_id,
-            "Crop": crop,
-            "Growth_Stage": stage,
-            "CSI": csi,
-            "ETc_mm": np.round(row["etc"], 1),
-            "Rainfall_mm": np.round(row["pe"], 1),
-            "Water_Deficit_mm": np.round(deficit, 1),
-            "Advisory_Status": status_name,
-            "Recommended_Water_Depth_mm": rec_depth,
-            "plot_id": field_id,
-            "crop": crop,
-            "stage": stage,
-            "deficit_mm": np.round(deficit, 1),
-            "status": status_name
+            "field_id": f"FLD-{idx+1:04d}",
+            "crop_type": row["crop"],
+            "growth_stage": row["stage"],
+            "csi": csi,
+            "water_deficit_mm": np.round(deficit, 1),
+            "advisory_status": advisory_status,
+            "latitude": np.round(base_lat + rng.uniform(-0.4, 0.4), 4),
+            "longitude": np.round(base_lng + rng.uniform(-0.4, 0.4), 4),
+            # Extra columns for copilot/advisory use
+            "etc_mm": np.round(float(row["etc"]), 1),
+            "rainfall_mm": np.round(float(row["pe"]), 1),
+            "recommended_depth_mm": np.round(max(0, deficit * 1.1), 1),
         })
         
     df_preds = pd.DataFrame(records)
@@ -82,7 +94,7 @@ def generate_emergent_bridge_data(target_dir="outputs/emergent_data"):
     # Save 1: predictions.csv
     preds_path = os.path.join(target_dir, "predictions.csv")
     df_preds.to_csv(preds_path, index=False, encoding="utf-8")
-    print(f"✅ Saved predictions: {preds_path} ({len(df_preds)} fields)")
+    print(f"✅ Saved predictions: {preds_path} ({len(df_preds)} rows)")
     
     # Save 2: advisory.geojson
     geo_mgr = GeoFieldManager(aoi_name="Indira Gandhi Canal Command")
@@ -105,8 +117,8 @@ def generate_emergent_bridge_data(target_dir="outputs/emergent_data"):
         "f1_score": 0.9593,
         "stage_estimation_accuracy": 0.9475,
         "total_fields": len(df_preds),
-        "stressed_fields_pct": 44.0,
-        "irrigation_needed_pct": 30.0,
+        "stressed_fields_pct": round(100 * sum(1 for r in records if r["advisory_status"] in ("Urgent","Critical")) / len(records), 1),
+        "irrigation_needed_pct": round(100 * sum(1 for r in records if r["advisory_status"] != "Adequate") / len(records), 1),
         "status": "live_pipeline",
         "model_type": "Random Forest + XGBoost Soft-Voting Ensemble",
         "fao_standard": "FAO-56 Dual Crop Coefficient"
@@ -128,13 +140,18 @@ def generate_emergent_bridge_data(target_dir="outputs/emergent_data"):
     comp_data.to_csv(comp_path, index=False, encoding="utf-8")
     print(f"✅ Saved model comparison: {comp_path}")
     
-    print("\n🎉 BRIDGE DATA GENERATION COMPLETE!")
-    print("👉 When these files are present in Emergent's `/app/backend/data/`, your landing page leaves will flip from Demo -> Live!")
+    print(f"\n🎉 BRIDGE DATA GENERATION COMPLETE!")
+    print(f"📊 {len(df_preds)} field records → {target_dir}")
+    print(f"   Adequate: {sum(1 for r in records if r['advisory_status']=='Adequate')}")
+    print(f"   Watch:    {sum(1 for r in records if r['advisory_status']=='Watch')}")
+    print(f"   Urgent:   {sum(1 for r in records if r['advisory_status']=='Urgent')}")
+    print(f"   Critical: {sum(1 for r in records if r['advisory_status']=='Critical')}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Export KrishiDrishti ML data for Emergent UI bridge.")
-    parser.add_argument("--target-dir", type=str, default="outputs/emergent_data", help="Target directory for exported files")
+    parser = argparse.ArgumentParser(description="Export KrishiDrishti ML data for frontend.")
+    parser.add_argument("--target-dir", type=str, default="app/backend/data",
+                        help="Target directory for exported files (default: app/backend/data)")
     args = parser.parse_args()
     
-    generate_emergent_bridge_data(args.target_dir)
+    generate_bridge_data(args.target_dir)

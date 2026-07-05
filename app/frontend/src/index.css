@@ -1,0 +1,144 @@
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Dark by default per KrishiDrishti brand */
+        --background: 140 20% 5%;
+        --foreground: 210 20% 96%;
+        --card: 145 20% 8%;
+        --card-foreground: 210 20% 96%;
+        --popover: 145 22% 7%;
+        --popover-foreground: 210 20% 96%;
+        --primary: 141 100% 45%;
+        --primary-foreground: 145 60% 6%;
+        --secondary: 145 15% 14%;
+        --secondary-foreground: 210 20% 96%;
+        --muted: 145 12% 12%;
+        --muted-foreground: 220 8% 65%;
+        --accent: 187 100% 50%;
+        --accent-foreground: 145 60% 6%;
+        --destructive: 4 90% 58%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 150 10% 16%;
+        --input: 150 10% 16%;
+        --ring: 141 100% 45%;
+        --radius: 0.75rem;
+    }
+}
+
+html,
+body,
+#root {
+    background-color: #0a0f0d;
+    color: #f3f4f6;
+}
+
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+    font-family: "Cabinet Grotesk", ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.font-mono {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Frosted glass panel */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-strong {
+    background: rgba(12, 20, 16, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+/* Frosted-glass headline text */
+.text-frost {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.55) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.neon-green-glow {
+    box-shadow:
+        0 0 24px rgba(0, 230, 91, 0.35),
+        0 0 60px rgba(0, 230, 91, 0.12);
+}
+
+/* Subtle scanning line for map placeholder */
+@keyframes sar-scan {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.sar-scan-line {
+    animation: sar-scan 4.5s linear infinite;
+}
+
+@keyframes pulse-dot {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.6);
+        opacity: 0.4;
+    }
+}
+
+.pulse-dot {
+    animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+/* Custom scrollbar for the dashboard */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 230, 91, 0.3);
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}

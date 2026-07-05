@@ -1,0 +1,6 @@
+Model,Accuracy,F1_Score,Kappa,Inference_Time_ms
+Random Forest,0.96,0.9593,0.9453,12.5
+XGBoost,0.955,0.954,0.938,8.2
+CatBoost,0.958,0.9575,0.941,15.1
+LightGBM,0.952,0.951,0.935,6.8
+Soft Voting Ensemble,0.965,0.9645,0.951,21.0

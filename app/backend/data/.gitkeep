@@ -1,0 +1,3 @@
+# This file keeps the data/ directory tracked by git.
+# Pipeline files (predictions.csv, advisory.geojson, metrics.json, model_comparison.csv)
+# are generated at runtime by export_to_emergent.py
