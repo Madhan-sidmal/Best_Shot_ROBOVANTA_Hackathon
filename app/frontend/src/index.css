@@ -142,3 +142,159 @@ body {
         @apply bg-background text-foreground;
     }
 }
+
+/* ─── Premium Glass Variants ─── */
+.glass-glow {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 230, 91, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 230, 91, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-cyan {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-warn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-danger {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 59, 48, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(255, 59, 48, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* ─── Chart Container Entrance ─── */
+@keyframes chart-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chart-entrance {
+    animation: chart-fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.chart-entrance-delay-1 {
+    animation: chart-fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+.chart-entrance-delay-2 {
+    animation: chart-fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.chart-entrance-delay-3 {
+    animation: chart-fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+/* ─── Gradient Glow Ring for Simulation ─── */
+@keyframes spin-gradient {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-gradient {
+    animation: spin-gradient 2s linear infinite;
+}
+
+/* ─── Shimmer Loading Effect ─── */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.03) 25%,
+        rgba(255, 255, 255, 0.08) 50%,
+        rgba(255, 255, 255, 0.03) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ─── Pulsing Critical Badge ─── */
+@keyframes pulse-critical {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 6px rgba(255, 59, 48, 0);
+    }
+}
+
+.pulse-critical {
+    animation: pulse-critical 2s ease-in-out infinite;
+}
+
+/* ─── Gradient Text ─── */
+.text-gradient-green {
+    background: linear-gradient(135deg, #00E65B 0%, #00E5FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-gradient-warm {
+    background: linear-gradient(135deg, #FBBF24 0%, #FF8A00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ─── Custom Range Slider ─── */
+input[type="range"].styled-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+}
+
+input[type="range"].styled-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #00E65B;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 230, 91, 0.5);
+    transition: transform 0.15s;
+}
+
+input[type="range"].styled-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* ─── Recharts Custom Tooltip ─── */
+.recharts-tooltip-wrapper {
+    z-index: 100 !important;
+}

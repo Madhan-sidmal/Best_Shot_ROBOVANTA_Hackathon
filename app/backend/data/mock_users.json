@@ -1,0 +1,20 @@
+{
+  "test_new@test.com": {
+    "email": "test_new@test.com",
+    "name": "New Persistent User",
+    "password": "$2b$12$7DlIMWcgIGdO0nkyQ3c8ceHOnbVezgUuqdW/SCblG2SoX24BtCESi",
+    "created_at": "2026-07-05T04:11:48.933028"
+  },
+  "sidmal@gmail.com": {
+    "email": "sidmal@gmail.com",
+    "name": "sidmalmadhan",
+    "password": "$2b$12$ZU0F174wVP5VzpwAG8BQF.qsLQvRE3i.Oe42Ge1jEzjABaPi7Hcf2",
+    "created_at": "2026-07-05T04:12:59.580857"
+  },
+  "unique_user_123@gmail.com": {
+    "email": "unique_user_123@gmail.com",
+    "name": "Unique User",
+    "password": "$2b$12$r6jfA2ZknzF7sQDnUsbsrOUOnlBkAKOTaPAxcyOzFO/IW.M.IJCF2",
+    "created_at": "2026-07-05T04:14:10.302647"
+  }
+}

@@ -1,18 +1,38 @@
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "sonner";
 import Landing from "@/pages/Landing";
 import Dashboard from "@/pages/Dashboard";
+import Login from "@/pages/Login";
+import Register from "@/pages/Register";
+import { AuthProvider, useAuth } from "@/contexts/AuthContext";
+
+function ProtectedRoute({ children }) {
+  const { user } = useAuth();
+  if (!user) return <Navigate to="/login" />;
+  return children;
+}
 
 function App() {
   return (
     <div className="App dark">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
       <Toaster
         theme="dark"
         position="top-right"

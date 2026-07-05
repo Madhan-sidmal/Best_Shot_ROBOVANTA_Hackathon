@@ -19,7 +19,9 @@ from pathlib import Path
 from pydantic import BaseModel, ConfigDict
 from typing import List, Optional, Any, Dict, Tuple
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import jwt
+from passlib.context import CryptContext
 
 # ---------- Logging (must be first) ----------
 logging.basicConfig(level=logging.INFO,
@@ -31,6 +33,7 @@ from copilot import generate_advisory as gemini_advisory
 
 ROOT_DIR = Path(__file__).parent
 DATA_DIR = ROOT_DIR / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 load_dotenv(ROOT_DIR / '.env')
 
 # ---------- MongoDB (optional — graceful degradation) ----------
@@ -50,6 +53,19 @@ except Exception as exc:
 
 
 app = FastAPI(title="KrishiDrishti API")
+
+@app.on_event("startup")
+async def startup_db_client():
+    global db
+    if db is not None:
+        try:
+            # Ping database to see if MongoDB is actually running
+            await db.command("ping")
+            logger.info("✅ MongoDB connection verified and active.")
+        except Exception as exc:
+            logger.warning("⚠️ MongoDB connection check failed: %s. Falling back to JSON-file-based mock database for all auth and alerts (no 3s lag).", exc)
+            db = None
+
 api_router = APIRouter(prefix="/api")
 
 
@@ -93,6 +109,43 @@ class CopilotRequest(BaseModel):
     status: str
     etc_mm: Optional[float] = None
 
+# ---------- Auth Models & Config ----------
+SECRET_KEY = "krishidrishti-super-secret-key"
+ALGORITHM = "HS256"
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+# fallback persistent store if MongoDB is down
+MOCK_USERS_FILE = DATA_DIR / "mock_users.json"
+
+def load_mock_users():
+    if MOCK_USERS_FILE.exists():
+        try:
+            return json.loads(MOCK_USERS_FILE.read_text(encoding="utf-8"))
+        except Exception as e:
+            logger.warning("⚠️ Failed to parse mock_users.json: %s", e)
+            return {}
+    return {}
+
+def save_mock_users(users):
+    try:
+        MOCK_USERS_FILE.write_text(json.dumps(users, indent=2), encoding="utf-8")
+    except Exception as e:
+        logger.warning("⚠️ Failed to save mock_users.json: %s", e)
+
+MOCK_USERS = load_mock_users()
+
+class RegisterRequest(BaseModel):
+    email: str
+    password: str
+    name: str
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+class AuthResponse(BaseModel):
+    token: str
+    user: dict
 
 # ---------- Parametric Simulator ----------
 CROPS = ["Rice", "Wheat", "Cotton", "Sugarcane"]
@@ -143,6 +196,83 @@ async def root():
     return {"message": "KrishiDrishti API", "status": "ok"}
 
 
+# ---------- Auth Routes ----------
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+def create_access_token(data: dict):
+    to_encode = data.copy()
+    expire = datetime.utcnow() + timedelta(days=7)
+    to_encode.update({"exp": expire})
+    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+
+@api_router.post("/auth/register", response_model=AuthResponse)
+async def register(req: RegisterRequest):
+    email = req.email.lower()
+    hashed = get_password_hash(req.password)
+    user_doc = {"email": email, "name": req.name, "password": hashed, "created_at": datetime.utcnow().isoformat()}
+    
+    use_mock = True
+    if db is not None:
+        try:
+            existing = await db.users.find_one({"email": email})
+            if existing:
+                raise HTTPException(status_code=400, detail="Email already registered")
+            res = await db.users.insert_one(user_doc)
+            user_doc["_id"] = str(res.inserted_id)
+            use_mock = False
+        except HTTPException:
+            raise
+        except Exception as exc:
+            logger.warning("⚠️ MongoDB write failed, falling back to in-memory: %s", exc)
+            use_mock = True
+            
+    if use_mock:
+        if email in MOCK_USERS:
+            raise HTTPException(status_code=400, detail="Email already registered")
+        MOCK_USERS[email] = user_doc
+        save_mock_users(MOCK_USERS)
+
+    token = create_access_token({"sub": email})
+    return {"token": token, "user": {"email": email, "name": req.name}}
+
+@api_router.post("/auth/login", response_model=AuthResponse)
+async def login(req: LoginRequest):
+    email = req.email.lower()
+    user = None
+    
+    use_mock = True
+    if db is not None:
+        try:
+            user = await db.users.find_one({"email": email})
+            use_mock = False
+        except Exception as exc:
+            logger.warning("⚠️ MongoDB read failed, falling back to in-memory: %s", exc)
+            use_mock = True
+
+    if use_mock:
+        user = MOCK_USERS.get(email)
+
+    if not user or not verify_password(req.password, user["password"]):
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    
+    token = create_access_token({"sub": email})
+    return {"token": token, "user": {"email": email, "name": user["name"]}}
+
+@api_router.get("/auth/me")
+async def get_me():
+    # Mock endpoint since we decode JWT on frontend for this demo
+    return {"status": "ok"}
+
+@api_router.post("/auth/logout")
+async def logout():
+    return {"status": "logged_out"}
+
+
+# ---------- Data Routes ----------
 @api_router.get("/fields", response_model=List[FieldRecord])
 async def get_fields():
     """Return field advisories from real pipeline files if present, else parametric simulator."""
@@ -150,6 +280,29 @@ async def get_fields():
     if real:
         return real
     return generate_fields()
+
+@api_router.get("/advisories")
+async def get_advisories():
+    """Alias for /fields to satisfy specific component requests if needed."""
+    return await get_fields()
+
+@api_router.get("/stats")
+async def get_stats():
+    """Return aggregated stats for KPIs."""
+    fields = await get_fields()
+    total = len(fields)
+    adequate = sum(1 for f in fields if f.advisory_status == 'Adequate')
+    watch = sum(1 for f in fields if f.advisory_status == 'Watch')
+    urgent = sum(1 for f in fields if f.advisory_status == 'Urgent')
+    critical = sum(1 for f in fields if f.advisory_status == 'Critical')
+    
+    return {
+        "total_fields": total,
+        "adequate": adequate,
+        "stressed": watch + urgent + critical,
+        "critical": critical,
+        "average_csi": round(sum(f.csi for f in fields) / total, 3) if total else 0
+    }
 
 
 def _read_fields_from_data() -> Optional[List[FieldRecord]]:

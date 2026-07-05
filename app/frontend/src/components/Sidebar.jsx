@@ -12,7 +12,7 @@ export default function Sidebar({ active, onSelect, onHome }) {
   return (
     <aside
       data-testid="sidebar"
-      className="glass-strong hidden w-64 shrink-0 flex-col justify-between border-r border-white/5 p-5 md:flex"
+      className="relative z-10 glass-strong hidden w-64 shrink-0 flex-col justify-between border-r border-white/5 p-5 md:flex"
     >
       <div>
         <button
